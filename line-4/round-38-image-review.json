@@ -1,0 +1,47 @@
+{
+  "name": "The Tied Observations",
+  "ancestor_sha256": "46ef5d3f5d3e828d274fdb703df6e65705251c48baf70f7d81bec8f51bb43955",
+  "generated_motif_sha256": "98e6950c4363440565c1daf30f57e135e3572f4c64eb2b339ba2342f7db4ac88",
+  "wall_sha256": "a9b1b40fea87390c4ee2f4c537cb5c94ebb4fb2218ac135dceaace94ce4efc53",
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v19.png"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "colour": "8-bit RGB",
+    "bytes": 4003168
+  },
+  "addition_rectangle": [
+    70,
+    660,
+    112,
+    102
+  ],
+  "generated_crop": [
+    440,
+    210,
+    665,
+    585
+  ],
+  "changed_pixels": 6835,
+  "changed_pixels_outside_addition": 0,
+  "method": "Installed built-in image generator supplied the motif; Node built-ins removed white in memory and composited pigment only in vacant rock. Generated motif overwritten by final wall.",
+  "thumbnail": {
+    "path": "dist/line-4/38.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "baseline JPEG",
+    "bytes": 77403
+  },
+  "visual_review": "Inspected full PNG and decoded 512px JPEG. Three tied pebbles in red/yellow ochre and charcoal occupy previously vacant left rock. Existing paintings, rock, cracks, torchlight and framing remain unchanged outside the addition. Pepe retains his wide mouth and heavy-lidded eyes. No writing, numbers, captions, signatures, logos, watermarks, borders, people or prohibited symbols observed.",
+  "hands": "Counted inherited Pepe hands as four fingers and one thumb each, five digits. The inherited lower-left stencil also has four fingers and one thumb. No new hand or stencil was added; all inherited hands remain pixel-identical.",
+  "unmet_visual_requirements": [],
+  "limitations": "Local visual review only. The inherited rock looks photographic and is preserved as required. The small mark is subdued at thumbnail scale; the JPEG is lossy."
+}

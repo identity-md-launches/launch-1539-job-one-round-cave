@@ -1,0 +1,25 @@
+{
+  "all_checks_passed": true,
+  "record_number": 38,
+  "wall": {
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "sha256": "a9b1b40fea87390c4ee2f4c537cb5c94ebb4fb2218ac135dceaace94ce4efc53"
+  },
+  "thumbnail": {
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "baseline JPEG",
+    "bytes": 77403
+  },
+  "unchanged_goal": true,
+  "unchanged_older_records": 37,
+  "changed_pixels_outside_addition": 0,
+  "unmet_visual_requirements": [],
+  "local_review_only": true
+}

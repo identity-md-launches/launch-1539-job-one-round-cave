@@ -289,3 +289,33 @@
   keys, wallets or secrets read; no signature, transaction submission,
   payment, post or deployment. The imagegen skill file was permission-denied;
   the available native image tool was used directly.
+
+## Round 38
+
+- Preserved the goal and all 37 older records. Gathering 17 reported no local
+  functional defect, so added transaction grouping rather than changing an
+  ancestor tool. Read the inherited source as data before executing it.
+- Reused transfer-crosscheck's raw-log revalidation, the bounded no-follow
+  capture reader, strict RPC parser and exact integer unit formatter. The new
+  standard-library Python piece groups observed ZTO/IMD events by transaction
+  and rejects contradictory mined positions and reversed transaction order.
+- Fifteen focused tests and the three relevant shared-dependency suites passed:
+  four suites / 60 tests. Filesystem fixtures stayed in test/scratch. The offline
+  command groups three retained real ZTO events into one transaction, exposing
+  four endpoints including an intermediary with zero net event flow.
+- A fresh read of historical blocks 26177298–26177309 at 08:34:03 UTC through
+  the supplied mainnet relay returned the same three events. Evidence is
+  attributed to the brief's public PublicNode URL; no machine relay address is
+  retained in the deliverables. Grouping does not establish complete receipts,
+  balances, trade volume, prices, a specific pool's activity or finality.
+- Recovered record 37's wall and verified its SHA-256. The installed built-in
+  image generator supplied three tied ochre pebbles. Used its returned bytes,
+  without reading the generated file outside the workspace. Node built-ins
+  transferred pigment only into vacant left rock; the generated insert was
+  overwritten by the full final wall. 6,835 pixels changed, none outside
+  (70,660,112,102). Reused the read gathering thumbnail helper for conversion.
+- Inspected the full PNG and 512px JPEG, including all inherited five-digit
+  hands. Dimensions, formats and visual limitations are recorded. No extra
+  picture remains in the workspace. No dependency installed, environment or
+  secret inspected, key or wallet touched, transaction signed/submitted,
+  payment, message post or deployment performed.

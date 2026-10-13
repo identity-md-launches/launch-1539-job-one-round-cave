@@ -1,0 +1,30 @@
+{
+  "suites": [
+    {
+      "command": "python3 -B line-4/tools/transfer-transaction-groups/test_groups.py",
+      "exit_code": 0,
+      "tests": 15,
+      "output": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.510s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-4/tools/transfer-crosscheck/test_crosscheck.py",
+      "exit_code": 0,
+      "tests": 21,
+      "output": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 0.165s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-4/tools/strict-rpc-json/test_strict_rpc.py",
+      "exit_code": 0,
+      "tests": 9,
+      "output": "test_byte_boundary (__main__.StrictTests.test_byte_boundary) ... ok\ntest_depth_boundary_and_strings (__main__.StrictTests.test_depth_boundary_and_strings) ... ok\ntest_duplicates_at_any_depth_including_escaped_keys (__main__.StrictTests.test_duplicates_at_any_depth_including_escaped_keys) ... ok\ntest_envelope_error_exclusivity_and_ids (__main__.StrictTests.test_envelope_error_exclusivity_and_ids) ... ok\ntest_invalid_encoding_and_syntax (__main__.StrictTests.test_invalid_encoding_and_syntax) ... ok\ntest_nonfinite_numbers_in_results_and_unused_fields (__main__.StrictTests.test_nonfinite_numbers_in_results_and_unused_fields) ... ok\ntest_retained_real_zto_logs_unchanged (__main__.StrictTests.test_retained_real_zto_logs_unchanged) ... ok\ntest_transport_rejects_raw_ambiguous_bytes (__main__.StrictTests.test_transport_rejects_raw_ambiguous_bytes) ... ok\ntest_valid_scalars_and_exact_integers (__main__.StrictTests.test_valid_scalars_and_exact_integers) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.305s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-4/tools/bounded-capture-reader/test_reader.py",
+      "exit_code": 0,
+      "tests": 15,
+      "output": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.600s\n\nOK\n"
+    }
+  ],
+  "all_passed": true,
+  "total_tests": 60
+}
