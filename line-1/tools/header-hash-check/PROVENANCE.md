@@ -1,0 +1,1 @@
+Keccak constants and pure functions copied unchanged from `line-3/tools/keccak-envelope/keccak_envelope.py`, excluding its decoder imports and transaction CLI. Source SHA-256: 562f8dc6fa0de363f8de2aa093d28975a170a2fdbc51721da781e6786d0f8247. Copy SHA-256: d0497bea08fc3a80630ac179286f619181337951d232ee2bdcc0e8b5ed1a2b5a. No Line 3 runtime dependency.

@@ -1,0 +1,23 @@
+{
+  "schema": "line1-local-check/1",
+  "record_number": 38,
+  "new_tests_passed": 16,
+  "ancestor_tests_passed": 28,
+  "live_block_decimal": 26182186,
+  "wall_png_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "wall_sha256": "a13ad28d5ca803d230d5b6ab77eeaa5b3efaae6e6634c40bcfdb30fca2d0dfc1",
+  "older_records_unchanged": true,
+  "goal_unchanged": true,
+  "new_paths_in_scope": true,
+  "new_nonartifact_files_under_100kb": true,
+  "named_png_outputs_untracked": true,
+  "visual_review": "line-1/wall-review-38.json",
+  "tool_demo": "python3 -B line-1/tools/header-hash-check/header_hash_check.py demo"
+}

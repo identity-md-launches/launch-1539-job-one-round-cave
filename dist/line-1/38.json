@@ -1,0 +1,30 @@
+{
+  "name": "The Tested Stone",
+  "image": "https://api.imd.fun/artifacts/a13ad28d5ca803d230d5b6ab77eeaa5b3efaae6e6634c40bcfdb30fca2d0dfc1",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 38
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "header-hash-check"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A ring tests the ochre stone within, as saved headers reveal their own hashes."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

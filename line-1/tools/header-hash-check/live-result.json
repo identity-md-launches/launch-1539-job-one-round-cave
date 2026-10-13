@@ -1,0 +1,29 @@
+{
+  "all_header_hashes_match": true,
+  "evidence_limits": "Header self-consistency only. No trusted hash anchor, consensus/finality validation, transaction or receipt root reconstruction, or proof of the eth_call result. The reported ZTO supply remains provider evidence.",
+  "header_layout": "Prague (21 fields)",
+  "headers": [
+    {
+      "block_number": "26182186",
+      "computed_hash": "0x548d48bf1517d8775ddc4442f2581ac1df9902e3fc10bc1c45de78193e2e3426",
+      "header_field_count": 21,
+      "matches": true,
+      "observation": "block",
+      "reported_hash": "0x548d48bf1517d8775ddc4442f2581ac1df9902e3fc10bc1c45de78193e2e3426",
+      "rlp_bytes": 649
+    },
+    {
+      "block_number": "26182186",
+      "computed_hash": "0x548d48bf1517d8775ddc4442f2581ac1df9902e3fc10bc1c45de78193e2e3426",
+      "header_field_count": 21,
+      "matches": true,
+      "observation": "block_after",
+      "reported_hash": "0x548d48bf1517d8775ddc4442f2581ac1df9902e3fc10bc1c45de78193e2e3426",
+      "rlp_bytes": 649
+    }
+  ],
+  "reported_total_supply_base_units": "1000000000000000000000000000",
+  "schema": "pinned-zto-header-hash-check/1",
+  "snapshot_sha256": "f1a116e5c3395fef32e418447376e300e7627672b764bd02ae9aaf6537f6e314",
+  "token": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e"
+}
