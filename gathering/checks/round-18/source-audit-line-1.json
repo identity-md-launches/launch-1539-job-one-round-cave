@@ -1,0 +1,856 @@
+[
+  {
+    "path": "line-1/tools/batch-capture/batch_capture.py",
+    "sha256": "5bd196891d1fb998de81e0f65c3f74861920625004ebbc5befa9d7142076c519",
+    "io_calls": [
+      {
+        "line": 52,
+        "call": "urllib.request.build_opener(urllib.request.ProxyHandler({}), hash_snapshot.NoRedirect())"
+      },
+      {
+        "line": 53,
+        "call": "opener.open(request, timeout=20)"
+      },
+      {
+        "line": 206,
+        "call": "sys.stdout.write(dumps(output))"
+      },
+      {
+        "line": 58,
+        "call": "response.read(LIMIT + 1)"
+      },
+      {
+        "line": 203,
+        "call": "(HERE / 'example-mainnet.json').read_bytes()"
+      },
+      {
+        "line": 204,
+        "call": "sys.stdin.buffer.read(LIMIT + 1)"
+      },
+      {
+        "line": 199,
+        "call": "sys.stdin.buffer.read(LIMIT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/batch-capture/test_batch_capture.py",
+    "sha256": "49ba9679b7c255a5b7d02c5c125fa5fc18b5b39819c2533afacf947e2de73ae8",
+    "io_calls": [
+      {
+        "line": 13,
+        "call": "Path(__file__).with_name('example-mainnet.json').read_bytes()"
+      },
+      {
+        "line": 100,
+        "call": "opener.assert_not_called()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/block-audit/block_audit.py",
+    "sha256": "df0f4c281c4d05ca0d4604c3a801dfebeb2d81ef876346c9f812cdabec43e461",
+    "io_calls": [
+      {
+        "line": 60,
+        "call": "urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())"
+      },
+      {
+        "line": 79,
+        "call": "read('eth_chainId', [])"
+      },
+      {
+        "line": 82,
+        "call": "read('eth_getBlockByNumber', [bundle['block']['number'], False])"
+      },
+      {
+        "line": 61,
+        "call": "opener.open(request, timeout=20)"
+      },
+      {
+        "line": 66,
+        "call": "response.read(LIMIT + 1)"
+      },
+      {
+        "line": 110,
+        "call": "sys.stdin.buffer.read(LIMIT + 1)"
+      },
+      {
+        "line": 78,
+        "call": "public_read(endpoint, method, params)"
+      },
+      {
+        "line": 112,
+        "call": "open(path, 'rb')"
+      },
+      {
+        "line": 113,
+        "call": "source.read(LIMIT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/block-audit/test_block_audit.py",
+    "sha256": "d0dbddd31f32efab78501ac127a6dd8508bf44cf058ff216f6026e249ce39e56",
+    "io_calls": [
+      {
+        "line": 12,
+        "call": "(HERE.parent / 'direct-capture' / 'example-pinned-zto.json').read_text()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/block-field-crosscheck/block_field_crosscheck.py",
+    "sha256": "30e655ee285466675006430753ed575cdc534230f7610df8bf5b96f956673d5a",
+    "io_calls": [
+      {
+        "line": 43,
+        "call": "cross.seal.read_bytes(crosscheck_path)"
+      },
+      {
+        "line": 86,
+        "call": "read.add_argument('snapshot')"
+      },
+      {
+        "line": 87,
+        "call": "read.add_argument('crosscheck')"
+      },
+      {
+        "line": 88,
+        "call": "read.add_argument('--expect-source-sha256')"
+      },
+      {
+        "line": 89,
+        "call": "read.add_argument('--expect-crosscheck-sha256')"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/block-field-crosscheck/test_block_field_crosscheck.py",
+    "sha256": "11237beba05c758e4a0d9d2bc360f11151541ca2d930abff75e003c6c3932328",
+    "io_calls": [
+      {
+        "line": 21,
+        "call": "Path('test/scratch').mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 22,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 33,
+        "call": "source.write_bytes(raw)"
+      },
+      {
+        "line": 36,
+        "call": "evidence.write_text(json.dumps(saved))"
+      },
+      {
+        "line": 103,
+        "call": "hashlib.sha256(SOURCE.read_bytes()).hexdigest()"
+      },
+      {
+        "line": 104,
+        "call": "hashlib.sha256(EVIDENCE.read_bytes()).hexdigest()"
+      },
+      {
+        "line": 112,
+        "call": "path.write_bytes(SOURCE.read_bytes() + b'\\n')"
+      },
+      {
+        "line": 118,
+        "call": "path.write_bytes(EVIDENCE.read_bytes().replace(b'\"schema\":', b'\"schema\":\"bad\",\"schema\":', 1))"
+      },
+      {
+        "line": 122,
+        "call": "path.write_text(json.dumps(saved))"
+      },
+      {
+        "line": 128,
+        "call": "path.symlink_to(EVIDENCE.resolve())"
+      },
+      {
+        "line": 26,
+        "call": "EVIDENCE.read_bytes()"
+      },
+      {
+        "line": 118,
+        "call": "EVIDENCE.read_bytes().replace(b'\"schema\":', b'\"schema\":\"bad\",\"schema\":', 1)"
+      },
+      {
+        "line": 112,
+        "call": "SOURCE.read_bytes()"
+      },
+      {
+        "line": 103,
+        "call": "SOURCE.read_bytes()"
+      },
+      {
+        "line": 104,
+        "call": "EVIDENCE.read_bytes()"
+      },
+      {
+        "line": 118,
+        "call": "EVIDENCE.read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/direct-capture/direct_capture.py",
+    "sha256": "6a777015dd02591448bcdd19b709e1d0597d8a952e751e3207d63b180d91962f",
+    "io_calls": [
+      {
+        "line": 68,
+        "call": "urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())"
+      },
+      {
+        "line": 84,
+        "call": "public_read(endpoint, method, params)"
+      },
+      {
+        "line": 69,
+        "call": "opener.open(request, timeout=20)"
+      },
+      {
+        "line": 74,
+        "call": "response.read(MAX_BYTES + 1)"
+      },
+      {
+        "line": 127,
+        "call": "sys.stdout.write(encode(output))"
+      },
+      {
+        "line": 95,
+        "call": "public_read(endpoint, method, params)"
+      },
+      {
+        "line": 124,
+        "call": "Path(__file__).with_name('example-pinned-zto.json').read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/direct-capture/test_direct_capture.py",
+    "sha256": "7b38e510627e100293003d7ee09ec32ff863e0ff9f10b8557740eac2d1fb927a",
+    "io_calls": [
+      {
+        "line": 16,
+        "call": "Path(__file__).with_name('example-pinned-zto.json').read_bytes()"
+      },
+      {
+        "line": 71,
+        "call": "parent.open.assert_not_called()"
+      },
+      {
+        "line": 56,
+        "call": "tool.public_read(RELAY, 'eth_chainId', [])"
+      },
+      {
+        "line": 84,
+        "call": "opener.assert_not_called()"
+      },
+      {
+        "line": 96,
+        "call": "opener.assert_not_called()"
+      },
+      {
+        "line": 120,
+        "call": "Path(__file__).with_name('example-zto.json').read_bytes()"
+      },
+      {
+        "line": 37,
+        "call": "tool.public_read(RELAY, 'eth_chainId', [])"
+      },
+      {
+        "line": 90,
+        "call": "tool.public_read(RELAY, 'eth_chainId', [])"
+      },
+      {
+        "line": 95,
+        "call": "tool.public_read(RELAY, 'eth_call', [{'to': tool.pinned.ZTO, 'data': '0x' + 'ab' * 65536}, 'latest'])"
+      },
+      {
+        "line": 110,
+        "call": "tool.public_read(RELAY, 'eth_chainId', [])"
+      },
+      {
+        "line": 117,
+        "call": "tool.public_read(RELAY, 'eth_chainId', [])"
+      },
+      {
+        "line": 83,
+        "call": "tool.public_read(endpoint, method, params)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/endpoint-policy/endpoint_policy.py",
+    "sha256": "a0e3f3566482e590f0cab556e74068e2db326138b9303fe2b4a0f0d5a0e3ca87",
+    "io_calls": [
+      {
+        "line": 41,
+        "call": "sys.stdin.buffer.read(MAX_INPUT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/endpoint-policy/test_policy.py",
+    "sha256": "cc030287fa0314b25b6f2336588708110a18f7ab5e4f52a5bff8ac050e912b23",
+    "io_calls": [
+      {
+        "line": 24,
+        "call": "(ROOT / 'pinned-snapshot' / 'example-zto.json').read_text()"
+      },
+      {
+        "line": 113,
+        "call": "pinned.public_read(RELAY, 'eth_sendRawTransaction', [])"
+      },
+      {
+        "line": 75,
+        "call": "pinned.public_read(url, 'eth_chainId', [])"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/hash-snapshot/hash_snapshot.py",
+    "sha256": "d44c3960020386ab0f1080316b16b3551876ec20a01422d9fa2378994b2bdb49",
+    "io_calls": [
+      {
+        "line": 122,
+        "call": "urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())"
+      },
+      {
+        "line": 140,
+        "call": "read('eth_chainId', [])"
+      },
+      {
+        "line": 123,
+        "call": "opener.open(request, timeout=20)"
+      },
+      {
+        "line": 124,
+        "call": "response.read(rpc.MAX_RESPONSE_BYTES + 1)"
+      },
+      {
+        "line": 150,
+        "call": "read('eth_call', params)"
+      },
+      {
+        "line": 139,
+        "call": "public_read(endpoint, method, params)"
+      },
+      {
+        "line": 143,
+        "call": "read('eth_getBlockByNumber', [tag, False])"
+      },
+      {
+        "line": 154,
+        "call": "read('eth_getBlockByNumber', [anchor['number'], False])"
+      },
+      {
+        "line": 241,
+        "call": "(Path(__file__).resolve().parent / 'example-mainnet.json').read_bytes()"
+      },
+      {
+        "line": 242,
+        "call": "sys.stdin.buffer.read(MAX_INPUT + 1)"
+      },
+      {
+        "line": 238,
+        "call": "sys.stdin.buffer.read(MAX_INPUT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/hash-snapshot/test_hash_snapshot.py",
+    "sha256": "e643c68327649c9cbe7a3a1f8bdf003652d0a9d4462181e9984228be8a945b0c",
+    "io_calls": [
+      {
+        "line": 13,
+        "call": "Path(__file__).with_name('example-mainnet.json').read_bytes()"
+      },
+      {
+        "line": 192,
+        "call": "tool.public_read(ENDPOINT, 'eth_chainId', [])"
+      },
+      {
+        "line": 178,
+        "call": "tool.public_read('https://user:password@eth.drpc.org', 'eth_chainId', [])"
+      },
+      {
+        "line": 176,
+        "call": "tool.public_read(ENDPOINT, method, params)"
+      },
+      {
+        "line": 187,
+        "call": "tool.public_read(ENDPOINT, 'eth_chainId', [])"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/header-hash-check/header_hash_check.py",
+    "sha256": "60b9b0026c7d90c3d1750d93824e1458d9479b00f9796e2afeb179f33aa524c5",
+    "io_calls": []
+  },
+  {
+    "path": "line-1/tools/header-hash-check/keccak.py",
+    "sha256": "d0497bea08fc3a80630ac179286f619181337951d232ee2bdcc0e8b5ed1a2b5a",
+    "io_calls": []
+  },
+  {
+    "path": "line-1/tools/header-hash-check/test_header_hash_check.py",
+    "sha256": "1c4aff6c7dfc130c095b38d038fc1c75acf9d0804a9ac1ac77db5da666e9d110",
+    "io_calls": [
+      {
+        "line": 124,
+        "call": "subprocess.run([sys.executable, '-B', str(Path(tool.__file__)), 'demo'], capture_output=True, text=True)"
+      },
+      {
+        "line": 130,
+        "call": "subprocess.run([sys.executable, '-B', str(Path(tool.__file__)), 'check', '../outside-workspace.json'], capture_output=True, text=True)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/pinned-snapshot/pinned_snapshot.py",
+    "sha256": "c59f0cbf2837f6c2c4b7763f5230fbad26ae9545067036198140aef85f321311",
+    "io_calls": [
+      {
+        "line": 49,
+        "call": "read('eth_chainId', [])"
+      },
+      {
+        "line": 54,
+        "call": "read('eth_call', [dict(CALL), number])"
+      },
+      {
+        "line": 52,
+        "call": "read('eth_getBlockByNumber', [tag, False])"
+      },
+      {
+        "line": 57,
+        "call": "read('eth_getBlockByNumber', [number, False])"
+      },
+      {
+        "line": 48,
+        "call": "public_read(endpoint, method, params)"
+      },
+      {
+        "line": 114,
+        "call": "sys.stdin.buffer.read(LIMIT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/pinned-snapshot/test_pinned.py",
+    "sha256": "4a9211611ca740b56d4fab2022c620858bf3b1808b7ea8e0874fdee4c5aac475",
+    "io_calls": [
+      {
+        "line": 13,
+        "call": "Path(__file__).with_name('example-zto.json').read_text()"
+      },
+      {
+        "line": 92,
+        "call": "tool.public_read(tool.rpc.DEFAULT_RPC, 'eth_sendRawTransaction', [])"
+      },
+      {
+        "line": 112,
+        "call": "tool.public_read(tool.rpc.DEFAULT_RPC, 'eth_chainId', [])"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/pinned-transport-check/pinned_transport_check.py",
+    "sha256": "1c641481f81cff767c48672a5e7a91ee3f83db9c6320cd8df681c745a9faada5",
+    "io_calls": [
+      {
+        "line": 49,
+        "call": "(HERE / 'example-zto.json').read_bytes()"
+      },
+      {
+        "line": 43,
+        "call": "super().https_open(request)"
+      },
+      {
+        "line": 134,
+        "call": "run_check()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/pinned-transport-check/test_pinned_transport.py",
+    "sha256": "7950ebde4e5890f130a0e6f73e544c272635a33fffd68f47df95a731095d38aa",
+    "io_calls": [
+      {
+        "line": 11,
+        "call": "tool.run_check()"
+      },
+      {
+        "line": 28,
+        "call": "Path(tool.HERE / 'example-zto.json').read_text()"
+      },
+      {
+        "line": 24,
+        "call": "tool.pinned.public_read(endpoint, method, params)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/rpc-snapshot/rpc_snapshot.py",
+    "sha256": "1de12a17cf5bced74e97782c9433e31a9e6a42bf8fe7a6b2ed6a6b01cc5e858b",
+    "io_calls": [
+      {
+        "line": 164,
+        "call": "urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())"
+      },
+      {
+        "line": 165,
+        "call": "opener.open(request, timeout=20)"
+      },
+      {
+        "line": 170,
+        "call": "response.read(MAX_RESPONSE_BYTES + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-check/check_snapshot.py",
+    "sha256": "aeaba4fa4020d54ed7c91db9cbb008580110af709f28a84ae3df4f5dbb9f5fea",
+    "io_calls": [
+      {
+        "line": 40,
+        "call": "sys.stdin.buffer.read(rpc.MAX_RESPONSE_BYTES + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-check/test_checks.py",
+    "sha256": "1be059096d036c9be349a521b4d757dfac3895959790334c54c8463e9d9574e9",
+    "io_calls": []
+  },
+  {
+    "path": "line-1/tools/snapshot-compare/snapshot_compare.py",
+    "sha256": "75a1ce3543435ba8ea0a111dc852f0b9f1ef482adecb0264a1acc68332917fb1",
+    "io_calls": [
+      {
+        "line": 102,
+        "call": "(Path(__file__).resolve().parents[1] / 'hash-snapshot' / 'example-mainnet.json').read_bytes()"
+      },
+      {
+        "line": 107,
+        "call": "sys.stdin.buffer.read(MAX_INPUT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-compare/test_snapshot_compare.py",
+    "sha256": "14ed1c4c87483a2f34abb3bd9da3c08077219212bcd06f4cc85cea65483c0ad9",
+    "io_calls": [
+      {
+        "line": 15,
+        "call": "(Path(__file__).resolve().parents[1] / 'hash-snapshot' / 'example-mainnet.json').read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-crosscheck/snapshot_crosscheck.py",
+    "sha256": "5d54e0ded991649ee34ae98179f14cd024d3ac7267627e05dbf303dee9f2b479",
+    "io_calls": [
+      {
+        "line": 113,
+        "call": "seal.read_bytes(evidence_path)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-crosscheck/test_snapshot_crosscheck.py",
+    "sha256": "9b7cfa05d14bf81558a9ed89a099f49e9c01b0b45dfb27359c6555868962f09e",
+    "io_calls": [
+      {
+        "line": 23,
+        "call": "Path('test/scratch').mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 24,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 94,
+        "call": "path.write_text(json.dumps(data))"
+      },
+      {
+        "line": 100,
+        "call": "path.write_bytes(EVIDENCE.read_bytes().replace(b'\"schema\":', b'\"schema\":\"wrong\",\"schema\":', 1))"
+      },
+      {
+        "line": 106,
+        "call": "path.write_bytes(SNAPSHOT.read_bytes() + b' ')"
+      },
+      {
+        "line": 27,
+        "call": "EVIDENCE.read_text()"
+      },
+      {
+        "line": 78,
+        "call": "d['reads'][2]['result'].upper().replace('0X', '0x')"
+      },
+      {
+        "line": 100,
+        "call": "EVIDENCE.read_bytes().replace(b'\"schema\":', b'\"schema\":\"wrong\",\"schema\":', 1)"
+      },
+      {
+        "line": 51,
+        "call": "d['reads'][0].update(result='0xaa36a7')"
+      },
+      {
+        "line": 61,
+        "call": "d['reads'][3]['result'].update(hash='0x' + '1' * 64)"
+      },
+      {
+        "line": 65,
+        "call": "d['reads'][2].update(result='0x' + '0' * 63 + '1')"
+      },
+      {
+        "line": 77,
+        "call": "d['reads'][index]['result']['hash'].upper().replace('0X', '0x')"
+      },
+      {
+        "line": 82,
+        "call": "d['reads'][2]['params'][0].update(data='0x70a08231')"
+      },
+      {
+        "line": 106,
+        "call": "SNAPSHOT.read_bytes()"
+      },
+      {
+        "line": 78,
+        "call": "d['reads'][2]['result'].upper()"
+      },
+      {
+        "line": 100,
+        "call": "EVIDENCE.read_bytes()"
+      },
+      {
+        "line": 77,
+        "call": "d['reads'][index]['result']['hash'].upper()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-replay/replay.py",
+    "sha256": "ebadcca77595c8d8b4a4789c6780c2d0b605c268f51a5ee7bc25b7c77f391975",
+    "io_calls": [
+      {
+        "line": 120,
+        "call": "(Path(__file__).resolve().parent / 'example-mainnet.json').read_bytes()"
+      },
+      {
+        "line": 136,
+        "call": "sys.stdin.buffer.read(MAX_INPUT + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-replay/test_replay.py",
+    "sha256": "048c4fad1924a78c91f32cc122b205138d025517bed4818e770785ad253b2a7c",
+    "io_calls": []
+  },
+  {
+    "path": "line-1/tools/snapshot-seal/snapshot_seal.py",
+    "sha256": "19e05ff2d222e536edad85e7157ec4f67557c21c93f0e71fb754816ed3dd155b",
+    "io_calls": [
+      {
+        "line": 32,
+        "call": "os.open(WORKSPACE, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)"
+      },
+      {
+        "line": 62,
+        "call": "read_bytes(path)"
+      },
+      {
+        "line": 89,
+        "call": "read_bytes(receipt_path)"
+      },
+      {
+        "line": 42,
+        "call": "os.open(parts[-1], os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=directory)"
+      },
+      {
+        "line": 35,
+        "call": "os.open(part, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=directory)"
+      },
+      {
+        "line": 44,
+        "call": "os.fdopen(descriptor, 'rb')"
+      },
+      {
+        "line": 48,
+        "call": "stream.read(MAX_BYTES + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-seal/test_snapshot_seal.py",
+    "sha256": "9c88f110a687bfaf6995e7f78bae484b2e13e7dae589d936f6115e2816818a7a",
+    "io_calls": [
+      {
+        "line": 16,
+        "call": "SCRATCH.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 20,
+        "call": "tempfile.TemporaryDirectory(dir=SCRATCH)"
+      },
+      {
+        "line": 29,
+        "call": "path.write_text(json.dumps(value, indent=2) + '\\n')"
+      },
+      {
+        "line": 67,
+        "call": "EXAMPLE.read_bytes()"
+      },
+      {
+        "line": 41,
+        "call": "self.write(directory, 'receipt.json', seal.seal(EXAMPLE))"
+      },
+      {
+        "line": 48,
+        "call": "self.write(directory, 'receipt.json', receipt)"
+      },
+      {
+        "line": 54,
+        "call": "self.write(directory, 'not-pinned.json', {'schema': 'nope'})"
+      },
+      {
+        "line": 61,
+        "call": "receipt.write_text('{')"
+      },
+      {
+        "line": 73,
+        "call": "path.write_bytes(ambiguous)"
+      },
+      {
+        "line": 80,
+        "call": "path.write_bytes(b'{\"block\":{\"hash\":\"a\",\"hash\":\"b\"}}')"
+      },
+      {
+        "line": 89,
+        "call": "path.write_text(raw)"
+      },
+      {
+        "line": 107,
+        "call": "path.symlink_to(EXAMPLE)"
+      },
+      {
+        "line": 120,
+        "call": "path.symlink_to(EXAMPLE.parent, target_is_directory=True)"
+      },
+      {
+        "line": 148,
+        "call": "path.write_bytes(b'x' * 64)"
+      },
+      {
+        "line": 165,
+        "call": "self.write(directory, 'reformatted.json', json.loads(EXAMPLE.read_bytes()))"
+      },
+      {
+        "line": 166,
+        "call": "path.write_bytes(path.read_bytes() + b' \\n')"
+      },
+      {
+        "line": 97,
+        "call": "seal.read_bytes(seal.WORKSPACE.parent / 'never-open-this')"
+      },
+      {
+        "line": 102,
+        "call": "seal.read_bytes(seal.WORKSPACE / '..' / 'never-open-this')"
+      },
+      {
+        "line": 122,
+        "call": "seal.read_bytes(path / EXAMPLE.name)"
+      },
+      {
+        "line": 127,
+        "call": "path.open('wb')"
+      },
+      {
+        "line": 128,
+        "call": "stream.truncate(seal.MAX_BYTES + 1)"
+      },
+      {
+        "line": 143,
+        "call": "seal.read_bytes(path)"
+      },
+      {
+        "line": 151,
+        "call": "path.write_bytes(b'x' * 65)"
+      },
+      {
+        "line": 159,
+        "call": "path.write_text(raw)"
+      },
+      {
+        "line": 115,
+        "call": "seal.read_bytes(path)"
+      },
+      {
+        "line": 136,
+        "call": "seal.read_bytes(path)"
+      },
+      {
+        "line": 153,
+        "call": "seal.read_bytes(path)"
+      },
+      {
+        "line": 165,
+        "call": "EXAMPLE.read_bytes()"
+      },
+      {
+        "line": 166,
+        "call": "path.read_bytes()"
+      },
+      {
+        "line": 150,
+        "call": "seal.read_bytes(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-timeline/snapshot_timeline.py",
+    "sha256": "7dcece4777fbc262afac3c7d9c6f3c1526723d9852d12c5565fa7a507d97212a",
+    "io_calls": [
+      {
+        "line": 133,
+        "call": "seal.read_bytes(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/snapshot-timeline/test_snapshot_timeline.py",
+    "sha256": "3afc4e096a821229454fff798f4c6013e90c8081c82c79a1f8cbd991cbfcb32d",
+    "io_calls": [
+      {
+        "line": 24,
+        "call": "SOURCE.read_bytes()"
+      },
+      {
+        "line": 30,
+        "call": "other.read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-1/tools/transport-check/transport_check.py",
+    "sha256": "5d52e20c68412b58f12741781f453cdc51e0fb90e45037f3dc7cef83186e168d",
+    "io_calls": [
+      {
+        "line": 60,
+        "call": "path.read_bytes()"
+      },
+      {
+        "line": 159,
+        "call": "run_check()"
+      }
+    ]
+  }
+]

@@ -1,0 +1,669 @@
+[
+  {
+    "path": "line-3/tools/access-list-audit/access_audit.py",
+    "sha256": "4388e8ba9634ec9786c0ce21da54a972070211fc562795ab10421dd50332a550",
+    "io_calls": [
+      {
+        "line": 87,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 25,
+        "call": "reader.intent.interpret(text)"
+      },
+      {
+        "line": 96,
+        "call": "reader.D.rlp_encode(fields).hex()"
+      },
+      {
+        "line": 24,
+        "call": "reader.inspect_json(text)"
+      },
+      {
+        "line": 96,
+        "call": "reader.D.rlp_encode(fields)"
+      },
+      {
+        "line": 111,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      },
+      {
+        "line": 115,
+        "call": "text.removesuffix('\\n').removesuffix('\\r')"
+      },
+      {
+        "line": 115,
+        "call": "text.removesuffix('\\n')"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/access-list-audit/test_access_audit.py",
+    "sha256": "0d0c3da23b77416fae013762b6773bb0ef6a3ae873529bf2ee88ada9610ef50e",
+    "io_calls": [
+      {
+        "line": 21,
+        "call": "a.reader.demo_object()"
+      },
+      {
+        "line": 32,
+        "call": "a.reader.D.rlp_encode(fields).hex()"
+      },
+      {
+        "line": 108,
+        "call": "a.reader.demo_object()"
+      },
+      {
+        "line": 113,
+        "call": "a.reader.D.rlp_item(raw, 1)"
+      },
+      {
+        "line": 133,
+        "call": "a.reader.D.rlp_item(raw, 1)"
+      },
+      {
+        "line": 155,
+        "call": "subprocess.run(prefix + ['--stdin'], input='0x02c0', capture_output=True, text=True)"
+      },
+      {
+        "line": 149,
+        "call": "subprocess.run(prefix + ['--demo', '--format', fmt], capture_output=True, text=True)"
+      },
+      {
+        "line": 152,
+        "call": "subprocess.run(prefix + ['--stdin', '--format', fmt], input=a.demo_text(fmt) + '\\r\\n', capture_output=True, text=True)"
+      },
+      {
+        "line": 32,
+        "call": "a.reader.D.rlp_encode(fields)"
+      },
+      {
+        "line": 112,
+        "call": "a.reader.D.demo_transaction()"
+      },
+      {
+        "line": 132,
+        "call": "a.reader.D.demo_transaction()"
+      },
+      {
+        "line": 115,
+        "call": "a.reader.D.rlp_encode(fields + [b'', b'\\x01', b'\\x01']).hex()"
+      },
+      {
+        "line": 136,
+        "call": "a.reader.D.rlp_encode(fields).hex()"
+      },
+      {
+        "line": 115,
+        "call": "a.reader.D.rlp_encode(fields + [b'', b'\\x01', b'\\x01'])"
+      },
+      {
+        "line": 136,
+        "call": "a.reader.D.rlp_encode(fields)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/amount-view/amount_view.py",
+    "sha256": "ad7e3186a966dc7d8b0661cf9de43c58211f0a6a2b8f459ff7d2a45991791d8e",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/amount-view/test_amount_view.py",
+    "sha256": "7b382ad66b42a73e79a15cd34f6edd930ae695bdfc6e8e3e28d19ea1f6c56d88",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/calldata-words/test_word_view.py",
+    "sha256": "3d7a32e750813495c3309018266f4212f04037910e7f79b18e1d6e101971d43d",
+    "io_calls": [
+      {
+        "line": 88,
+        "call": "subprocess.run([sys.executable, '-B', script, '--demo'], capture_output=True, text=True, check=False)"
+      },
+      {
+        "line": 92,
+        "call": "subprocess.run([sys.executable, '-B', script, '--transaction', '0x02c0'], capture_output=True, text=True, check=False)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/calldata-words/word_view.py",
+    "sha256": "570ff67bc5feefef448e928a3124255bd31dc21d8780e0346bec9c8c8eb8f5e3",
+    "io_calls": [
+      {
+        "line": 29,
+        "call": "rpc_reader.inspect_json(transaction)"
+      },
+      {
+        "line": 102,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      },
+      {
+        "line": 104,
+        "call": "transaction.removesuffix('\\n').removesuffix('\\r')"
+      },
+      {
+        "line": 104,
+        "call": "transaction.removesuffix('\\n')"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/canonical-envelope/envelope.py",
+    "sha256": "0d3c326701806643e02a240af67ba3c5a03873b4baed30840a49295c6cc22d31",
+    "io_calls": [
+      {
+        "line": 48,
+        "call": "rpc_reader.inspect_json(json_text)"
+      },
+      {
+        "line": 71,
+        "call": "rpc_reader.intent.interpret(encoded_hex)"
+      },
+      {
+        "line": 93,
+        "call": "rpc_reader.demo_object()"
+      },
+      {
+        "line": 95,
+        "call": "sys.stdin.read(rpc_reader.MAX_JSON_CHARS + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/canonical-envelope/test_envelope.py",
+    "sha256": "a90a999746e5a03d290b11e5c82ade5a499f5f038c90cf9d8798a1cc14f2650d",
+    "io_calls": [
+      {
+        "line": 14,
+        "call": "envelope.rpc_reader.demo_object()"
+      },
+      {
+        "line": 37,
+        "call": "envelope.rpc_reader.demo_object()"
+      },
+      {
+        "line": 52,
+        "call": "envelope.rpc_reader.demo_object()"
+      },
+      {
+        "line": 64,
+        "call": "envelope.rpc_reader.demo_object()"
+      },
+      {
+        "line": 26,
+        "call": "envelope.rpc_reader.demo_object()"
+      },
+      {
+        "line": 30,
+        "call": "envelope.rpc_reader.intent.interpret(report['unsignedEnvelopeHex'])"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/erc20-intent/intent.py",
+    "sha256": "5502c5be013a0e7f1c6226627fe6feee3d732175bfc328f413e7d49fc22ec101",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/erc20-intent/test_intent.py",
+    "sha256": "bf69bab1373a2ef5b5a8b1bac6c87c907e05db9fa9f8a907760a6199a2705257",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/fee-context/fee_context.py",
+    "sha256": "b223dc9f078e27bb7e6e72991e4ffe181be18cd7baacdca104e79dafba08953f",
+    "io_calls": [
+      {
+        "line": 36,
+        "call": "reader.intent.interpret(text)"
+      },
+      {
+        "line": 35,
+        "call": "reader.inspect_json(text)"
+      },
+      {
+        "line": 100,
+        "call": "reader.D.demo_transaction()"
+      },
+      {
+        "line": 102,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      },
+      {
+        "line": 100,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 106,
+        "call": "text.removesuffix('\\n').removesuffix('\\r')"
+      },
+      {
+        "line": 106,
+        "call": "text.removesuffix('\\n')"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/fee-context/test_fee_context.py",
+    "sha256": "52a7d4e7ced65aa8a51b77138b2bcbc25ea710e92bc5112c1a439356a999b0fe",
+    "io_calls": [
+      {
+        "line": 15,
+        "call": "f.reader.demo_object()"
+      },
+      {
+        "line": 105,
+        "call": "f.reader.demo_object()"
+      },
+      {
+        "line": 138,
+        "call": "subprocess.run(prefix + ['1000000000', '--demo'], capture_output=True, text=True)"
+      },
+      {
+        "line": 141,
+        "call": "subprocess.run(prefix + ['3000000000', '--demo'], capture_output=True, text=True)"
+      },
+      {
+        "line": 150,
+        "call": "subprocess.run(prefix + ['1', '--stdin'], input=f.reader.D.demo_transaction() + '\\r\\n', capture_output=True, text=True)"
+      },
+      {
+        "line": 99,
+        "call": "f.reader.D.demo_transaction()"
+      },
+      {
+        "line": 147,
+        "call": "subprocess.run(prefix + args, input=text, capture_output=True, text=True)"
+      },
+      {
+        "line": 100,
+        "call": "f.reader.demo_object()"
+      },
+      {
+        "line": 151,
+        "call": "f.reader.D.demo_transaction()"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/fee-envelope/fee_envelope.py",
+    "sha256": "9b00c244abc354bc174e5319c28e01ba97ab7ac0bcbf2ef54da2a1f35716e07d",
+    "io_calls": [
+      {
+        "line": 64,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1).strip()"
+      },
+      {
+        "line": 64,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/fee-horizon/fee_horizon.py",
+    "sha256": "1faedb7a388849b78b8ad4eb47f8c6db663d74400c9ff3125a6f71689160c6b8",
+    "io_calls": [
+      {
+        "line": 123,
+        "call": "fee_context.reader.D.demo_transaction()"
+      },
+      {
+        "line": 125,
+        "call": "sys.stdin.read(fee_context.MAX_INPUT_CHARS + 1)"
+      },
+      {
+        "line": 122,
+        "call": "fee_context.reader.demo_object()"
+      },
+      {
+        "line": 129,
+        "call": "text.removesuffix('\\n').removesuffix('\\r')"
+      },
+      {
+        "line": 129,
+        "call": "text.removesuffix('\\n')"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/fee-horizon/test_fee_horizon.py",
+    "sha256": "deb8a664e1f966f505dc299bb610926d9fe9d28d66a97d9183af20255e523880",
+    "io_calls": [
+      {
+        "line": 57,
+        "call": "h.fee_context.reader.demo_object()"
+      },
+      {
+        "line": 127,
+        "call": "subprocess.run([sys.executable, '-B', str(script), '--demo', '--parent-base-fee-wei', '1000000000', '--blocks', '4'], capture_output=True, text=True)"
+      },
+      {
+        "line": 134,
+        "call": "subprocess.run([sys.executable, '-B', str(script), '--demo', '--parent-base-fee-wei', '1000000000', '--blocks', '65'], capture_output=True, text=True)"
+      },
+      {
+        "line": 46,
+        "call": "subprocess.run(command + [str(2 ** 256 - 1)], capture_output=True, text=True)"
+      },
+      {
+        "line": 50,
+        "call": "subprocess.run(command + [str(2 ** 256)], capture_output=True, text=True)"
+      },
+      {
+        "line": 101,
+        "call": "reader.D.demo_transaction()"
+      },
+      {
+        "line": 16,
+        "call": "reader.D.demo_transaction()"
+      },
+      {
+        "line": 102,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 17,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 33,
+        "call": "h.fee_context.reader.D.demo_transaction()"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/gas-budget/gas_budget.py",
+    "sha256": "de9efb286f491d9d6ef75ec731604acfc59bac7a33a58de9dcb568900b06b31c",
+    "io_calls": [
+      {
+        "line": 28,
+        "call": "reader.intent.interpret(text)"
+      },
+      {
+        "line": 27,
+        "call": "reader.inspect_json(text)"
+      },
+      {
+        "line": 106,
+        "call": "reader.D.demo_transaction()"
+      },
+      {
+        "line": 108,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      },
+      {
+        "line": 105,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 114,
+        "call": "text.removesuffix('\\n').removesuffix('\\r')"
+      },
+      {
+        "line": 114,
+        "call": "text.removesuffix('\\n')"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/gas-budget/test_gas_budget.py",
+    "sha256": "8aab37f1852deebf4caf485127cfe82ecbb614041281afd017b96577cc006f96",
+    "io_calls": [
+      {
+        "line": 118,
+        "call": "tool.reader.demo_object()"
+      },
+      {
+        "line": 25,
+        "call": "tool.reader.demo_object()"
+      },
+      {
+        "line": 147,
+        "call": "tool.reader.demo_object()"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/keccak-envelope/keccak_envelope.py",
+    "sha256": "562f8dc6fa0de363f8de2aa093d28975a170a2fdbc51721da781e6786d0f8247",
+    "io_calls": [
+      {
+        "line": 87,
+        "call": "transaction_hex.removeprefix('0x')"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/keccak-envelope/test_keccak_envelope.py",
+    "sha256": "4450c4b03212206b7c7a3b601d63278d4f699a66e1e69fffcf72710a5a70cbf0",
+    "io_calls": [
+      {
+        "line": 64,
+        "call": "subprocess.run([sys.executable, '-B', str(PATH), '--demo'], capture_output=True, text=True, check=False)"
+      },
+      {
+        "line": 68,
+        "call": "subprocess.run([sys.executable, '-B', str(PATH), '0x02c0'], capture_output=True, text=True, check=False)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/native-budget/native_budget.py",
+    "sha256": "d5894c629f3a5bc5f9e24e29a20758fe3385ccf9f1580002e536d858ab8eec19",
+    "io_calls": [
+      {
+        "line": 54,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1).strip()"
+      },
+      {
+        "line": 54,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/native-budget/test_native_budget.py",
+    "sha256": "79d0b7eaa7b7b8399ed7dceb5efc0fdd78c03a2c6753f41c670588b20e4cf2cb",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/rlp-byte-map/byte_map.py",
+    "sha256": "5e60b923c9024885c5fa19b1841d0d270786d7c242ed3bfb689f7723f504b08b",
+    "io_calls": [
+      {
+        "line": 97,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1).removesuffix('\\n').removesuffix('\\r')"
+      },
+      {
+        "line": 97,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1).removesuffix('\\n')"
+      },
+      {
+        "line": 97,
+        "call": "sys.stdin.read(MAX_INPUT_CHARS + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/rlp-byte-map/test_byte_map.py",
+    "sha256": "9198a7bf83c1ab2ea76fbd66c92be368efadd32a7b2bab3340099a6f5bd2f99d",
+    "io_calls": [
+      {
+        "line": 66,
+        "call": "subprocess.run(command + ['--demo'], capture_output=True, text=True)"
+      },
+      {
+        "line": 69,
+        "call": "subprocess.run(command + ['0x02c0'], capture_output=True, text=True)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/rpc-unsigned-reader/rpc_reader.py",
+    "sha256": "d5ede86a55038b43955a63483ad190bfc69d1c82b1e4eca0523c96903f04dd35",
+    "io_calls": [
+      {
+        "line": 118,
+        "call": "sys.stdin.read(MAX_JSON_CHARS + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/rpc-unsigned-reader/test_rpc_reader.py",
+    "sha256": "b6d5c7527525469c11111201c9f26111d44f51cf8b6ce8f81a5a6ca0bc2f49ce",
+    "io_calls": [
+      {
+        "line": 14,
+        "call": "reader.inspect_json(json.dumps(obj))"
+      },
+      {
+        "line": 19,
+        "call": "reader.intent.interpret(reader.D.demo_transaction())"
+      },
+      {
+        "line": 26,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 33,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 64,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 87,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 94,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 101,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 116,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 121,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 135,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 140,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 19,
+        "call": "reader.D.demo_transaction()"
+      },
+      {
+        "line": 27,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 45,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 50,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 70,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 117,
+        "call": "reader.intent.IMD[2:].upper()"
+      },
+      {
+        "line": 148,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 20,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 35,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 36,
+        "call": "reader.inspect_json(json.dumps(obj))"
+      },
+      {
+        "line": 60,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 78,
+        "call": "reader.inspect_json(text)"
+      },
+      {
+        "line": 83,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 134,
+        "call": "reader.inspect_json(text)"
+      },
+      {
+        "line": 156,
+        "call": "reader.demo_object()"
+      },
+      {
+        "line": 159,
+        "call": "reader.main(args)"
+      },
+      {
+        "line": 165,
+        "call": "reader.main(args)"
+      },
+      {
+        "line": 157,
+        "call": "reader.demo_object()"
+      }
+    ]
+  },
+  {
+    "path": "line-3/tools/unsigned-diff/test_unsigned_diff.py",
+    "sha256": "003bffe719dd6c9c3ffe87d3c12f08d18908c9d8a1e60f1906b7be8acf61219f",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/unsigned-diff/unsigned_diff.py",
+    "sha256": "30a81da3bc957010d7dcc222f2d7512f73a960f26df67854bc86589ef7e43e48",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/unsigned-guard/guard.py",
+    "sha256": "a5177439fe8af9c589c23cee70437dbb79525c1b1b08cd2e03235fd014a0a14f",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/unsigned-guard/test_guard.py",
+    "sha256": "dbd9bada7bb9fd1bc0f6b1e1b17ddeec9316880c79881e225849311da1a72543",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/zto-eip1559-decoder/test_decoder.py",
+    "sha256": "39fcd661b54523c4a51fa06b526e78b642edff218352fabfbb45305d99676db2",
+    "io_calls": []
+  },
+  {
+    "path": "line-3/tools/zto-eip1559-decoder/tx_decode.py",
+    "sha256": "c5d852004603011b890a991d6ef988093d1974df00c48549de8f076029146757",
+    "io_calls": []
+  }
+]

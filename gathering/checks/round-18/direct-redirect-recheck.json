@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "python_runtime": "3.10",
+  "checks": [
+    {
+      "http_status": 301,
+      "requests": 1,
+      "refused_as": "ValueError"
+    },
+    {
+      "http_status": 302,
+      "requests": 1,
+      "refused_as": "ValueError"
+    },
+    {
+      "http_status": 303,
+      "requests": 1,
+      "refused_as": "ValueError"
+    },
+    {
+      "http_status": 307,
+      "requests": 1,
+      "refused_as": "ValueError"
+    },
+    {
+      "http_status": 308,
+      "requests": 1,
+      "refused_as": "HTTPError"
+    }
+  ],
+  "meaning": "Actual urllib path refuses every tested redirect before any redirected request; native handler-introspection test is incompatible with Python 3.10."
+}

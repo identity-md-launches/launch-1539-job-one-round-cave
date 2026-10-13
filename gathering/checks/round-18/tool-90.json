@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"assumption\": \"Balance is a caller assertion; no account or chain state was queried.\",\n  \"balanceEth\": \"0.0002\",\n  \"balanceWei\": \"200000000000000\",\n  \"coversMaximumEnvelope\": true,\n  \"feeBasis\": \"gasLimit multiplied by maxFeePerGas; actual gas may be lower.\",\n  \"maximumNativeValueAndFeeEth\": \"0.0002\",\n  \"maximumNativeValueAndFeeWei\": \"200000000000000\",\n  \"schema\": \"native-budget/v1\",\n  \"shortfallWei\": \"0\",\n  \"surplusWei\": \"0\",\n  \"transaction\": {\n    \"accessListEntries\": 0,\n    \"calldataSelector\": \"0x18160ddd\",\n    \"chainId\": 1,\n    \"destination\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n    \"feeCapCeilingEth\": \"0.0002\",\n    \"feeCapCeilingWei\": \"200000000000000\",\n    \"gasLimit\": \"100000\",\n    \"interpretation\": [\n      \"The ceiling uses gasLimit multiplied by maxFeePerGas; actual gas use may be lower.\",\n      \"This is an unsigned-envelope arithmetic summary, not a balance or execution check.\",\n      \"Ethereum gas is paid in ETH, including calls to ZTO and IMD.\",\n      \"No network, wallet, key, environment, signing or transaction submission is used.\"\n    ],\n    \"maxFeePerGasWei\": \"2000000000\",\n    \"maxPriorityFeePerGasWei\": \"1000000000\",\n    \"nativeValueEth\": \"0\",\n    \"nativeValueWei\": \"0\",\n    \"nonce\": 0,\n    \"type\": \"EIP-1559\",\n    \"valuePlusFeeCeilingEth\": \"0.0002\",\n    \"valuePlusFeeCeilingWei\": \"200000000000000\"\n  }\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/native-budget/native_budget.py",
+    "--balance-wei",
+    "200000000000000",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.378005+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

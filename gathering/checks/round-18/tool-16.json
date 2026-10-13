@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_build_is_sorted_and_replayable (test_catalog.CatalogTests) ... ok\ntest_canonical_requires_lowercase_digest (test_catalog.CatalogTests) ... ok\ntest_changed_archive_is_refused (test_catalog.CatalogTests) ... ok\ntest_duplicate_archive_is_refused (test_catalog.CatalogTests) ... ok\ntest_duplicate_json_key_is_refused (test_catalog.CatalogTests) ... ok\ntest_empty_archive_list_is_refused (test_catalog.CatalogTests) ... ok\ntest_noncanonical_catalog_is_refused (test_catalog.CatalogTests) ... ok\ntest_outside_path_is_refused (test_catalog.CatalogTests) ... ok\ntest_same_inputs_are_deterministic (test_catalog.CatalogTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.066s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-catalog",
+    "-p",
+    "test_catalog.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T08:41:41.701307+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

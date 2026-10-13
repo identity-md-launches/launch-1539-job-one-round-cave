@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"affected_declared_paths\": [\n    \"README.md\",\n    \"handoff.py\"\n  ],\n  \"affected_roots\": [\n    \"README.md\"\n  ],\n  \"changed_outside_closure\": [],\n  \"closure_paths\": [\n    \"README.md\",\n    \"handoff.py\"\n  ],\n  \"comparison\": {\n    \"added\": [],\n    \"after\": {\n      \"archive_bytes\": 13238,\n      \"archive_sha256\": \"94e3c46f1ace556f4bab55a3985fc9402dabe32afc931ccd8b5a8f0da31415ed\",\n      \"file_count\": 2,\n      \"payload_bytes\": 12660,\n      \"trusted_digest_matched\": false\n    },\n    \"before\": {\n      \"archive_bytes\": 13181,\n      \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n      \"file_count\": 2,\n      \"payload_bytes\": 12603,\n      \"trusted_digest_matched\": false\n    },\n    \"counts\": {\n      \"added\": 0,\n      \"modified\": 1,\n      \"removed\": 0,\n      \"unchanged\": 1\n    },\n    \"format\": \"handoff-comparison-v1\",\n    \"modified\": [\n      {\n        \"after\": {\n          \"bytes\": 9880,\n          \"sha256\": \"21cc11704fe8066d247466ba0c471206fee8d3d189491c4104302ab48565cf23\"\n        },\n        \"before\": {\n          \"bytes\": 9823,\n          \"sha256\": \"0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d\"\n        },\n        \"path\": \"handoff.py\"\n      }\n    ],\n    \"note\": \"Integrity is not authenticity without independently trusted archive hashes. Renames are reported as removal plus addition; payload code is never executed.\",\n    \"payload_byte_delta\": 57,\n    \"removed\": [],\n    \"same_archive\": false,\n    \"same_payload\": false,\n    \"unchanged\": [\n      \"README.md\"\n    ],\n    \"verified\": true\n  },\n  \"demo\": \"real inherited archive versus an explicitly hypothetical in-memory code edit\",\n  \"direct_modified_paths\": [\n    \"handoff.py\"\n  ],\n  \"format\": \"handoff-impact-v1\",\n  \"graph_digest_encoding\": \"ASCII JSON, sorted keys and lists, compact separators, no newline\",\n  \"graph_edge_count\": 1,\n  \"graph_node_count\": 2,\n  \"graph_sha256\": \"de2d40eb22c3920fcab0014d03d1b60e0bc66fa95c85c93224b2e190e0bebdcb\",\n  \"missing_dependency_paths\": [],\n  \"note\": \"Impact means a baseline root reaches a changed or removed file through caller declarations, including its own bytes. Added files and changes outside that closure do not affect these baseline roots. No new-revision dependency inference, payload execution, authorship proof or software-behavior claim is made.\",\n  \"requires_review\": true,\n  \"roots\": [\n    \"README.md\"\n  ],\n  \"unaffected_roots\": [],\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-impact/impact.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.333085+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

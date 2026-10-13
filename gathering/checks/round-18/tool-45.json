@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_consumer_cli_rejects_bad_input_cleanly (test_reader.ReaderTests) ... ok\ntest_deep_json_refused_cleanly (test_reader.ReaderTests) ... ok\ntest_directory_and_missing_file_rejected (test_reader.ReaderTests) ... ok\ntest_directory_symlink_rejected (test_reader.ReaderTests) ... ok\ntest_fifo_rejected_without_blocking (test_reader.ReaderTests) ... ok\ntest_final_symlink_rejected (test_reader.ReaderTests) ... ok\ntest_invalid_limits (test_reader.ReaderTests) ... ok\ntest_nesting_limit_ignores_escaped_string_delimiters (test_reader.ReaderTests) ... ok\ntest_outside_rejected_before_open (test_reader.ReaderTests) ... ok\ntest_read_is_bounded_even_if_file_grows_after_stat (test_reader.ReaderTests) ... ok\ntest_real_zto_demo (test_reader.ReaderTests) ... ok\ntest_regular_file_and_exact_limit (test_reader.ReaderTests) ... ok\ntest_strict_json (test_reader.ReaderTests) ... ok\ntest_three_consumers_share_restrictions (test_reader.ReaderTests) ... ok\ntest_traversal_rejected_before_open (test_reader.ReaderTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.350s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/bounded-capture-reader",
+    "-p",
+    "test_reader.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T08:41:54.256638+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

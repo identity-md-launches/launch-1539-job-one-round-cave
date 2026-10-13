@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_actual_inherited_archive (test_reproduce.ReproductionTests) ... ok\ntest_archive_comment (test_reproduce.ReproductionTests) ... ok\ntest_canonical_unicode_empty_and_nested (test_reproduce.ReproductionTests) ... ok\ntest_cli_exits_and_workspace_paths (test_reproduce.ReproductionTests) ... ok\ntest_digest_and_limits (test_reproduce.ReproductionTests) ... ok\ntest_entry_order (test_reproduce.ReproductionTests) ... ok\ntest_integrity_failure_refused (test_reproduce.ReproductionTests) ... ok\ntest_manifest_serialization (test_reproduce.ReproductionTests) ... ok\ntest_mode (test_reproduce.ReproductionTests) ... ok\ntest_timestamp (test_reproduce.ReproductionTests) ... ok\ntest_truncated_and_trailing (test_reproduce.ReproductionTests) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.437s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-reproduce",
+    "-p",
+    "test_reproduce.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 11,
+  "checked_at": "2026-10-13T08:41:43.592238+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_bad_graphs (test_dependencies.Dependencies) ... ok\ntest_bad_roots (test_dependencies.Dependencies) ... ok\ntest_cli_failure_has_no_receipt_or_output (test_dependencies.Dependencies) ... ok\ntest_cli_preview_and_exclusive_output (test_dependencies.Dependencies) ... ok\ntest_corrupt_omitted_file_refused (test_dependencies.Dependencies) ... ok\ntest_cycles_and_self_edge_terminate (test_dependencies.Dependencies) ... ok\ntest_declaration_conflicts (test_dependencies.Dependencies) ... ok\ntest_deep_graph_no_recursion (test_dependencies.Dependencies) ... ok\ntest_graph_and_archive_budgets (test_dependencies.Dependencies) ... ok\ntest_multiple_roots_shared_dependency (test_dependencies.Dependencies) ... ok\ntest_mutable_snapshot_frozen (test_dependencies.Dependencies) ... ok\ntest_order_independent_graph_roots_and_edges (test_dependencies.Dependencies) ... ok\ntest_path_single_read_and_early_declaration_refusal (test_dependencies.Dependencies) ... ok\ntest_real_archive_demo_no_write (test_dependencies.Dependencies) ... ok\ntest_source_digest_pin (test_dependencies.Dependencies) ... ok\ntest_transitive_closure_exact_bytes_and_omission (test_dependencies.Dependencies) ... ok\ntest_undeclared_roots_and_dependencies (test_dependencies.Dependencies) ... ok\ntest_unselected_declaration_recorded_and_validated (test_dependencies.Dependencies) ... ok\ntest_workspace_confinement (test_dependencies.Dependencies) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.181s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-dependencies",
+    "-p",
+    "test_dependencies.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 19,
+  "checked_at": "2026-10-13T08:41:42.503501+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

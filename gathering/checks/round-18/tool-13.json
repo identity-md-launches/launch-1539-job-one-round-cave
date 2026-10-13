@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_batch_limits (test_replay.Tests) ... ok\ntest_byte_equivalent_hex_case_matches (test_replay.Tests) ... ok\ntest_chain_id_is_the_validated_captured_network (test_replay.Tests) ... ok\ntest_cli_demo_with_network_disabled (test_replay.Tests) ... ok\ntest_cli_failure_emits_no_partial_report_or_traceback (test_replay.Tests) ... ok\ntest_cli_replays_live_format_and_keeps_rpc_errors_in_report (test_replay.Tests) ... ok\ntest_conflicting_duplicate_calls_rejected (test_replay.Tests) ... ok\ntest_duplicate_nonfinite_and_bad_envelope_json_rejected (test_replay.Tests) ... ok\ntest_extra_fields_wrong_versions_and_scalar_params (test_replay.Tests) ... ok\ntest_full_snapshot_is_validated_even_for_chain_id (test_replay.Tests) ... ok\ntest_generic_return_bytes_are_not_abi_decoded (test_replay.Tests) ... ok\ntest_identical_duplicate_calls_allowed (test_replay.Tests) ... ok\ntest_input_mutation_cannot_change_validated_lookup (test_replay.Tests) ... ok\ntest_input_size_bound (test_replay.Tests) ... ok\ntest_latest_numbers_and_missing_canonicality_are_refused (test_replay.Tests) ... ok\ntest_malformed_request_types_and_ids (test_replay.Tests) ... ok\ntest_method_allowlist_is_exact (test_replay.Tests) ... ok\ntest_mixed_batch_preserves_ids_and_suppresses_notifications (test_replay.Tests) ... ok\ntest_notifications_and_null_identifier (test_replay.Tests) ... ok\ntest_replays_actual_capture_with_new_ids (test_replay.Tests) ... ok\ntest_report_keeps_offline_provenance (test_replay.Tests) ... ok\ntest_uncaptured_call_fields_are_not_ignored (test_replay.Tests) ... ok\ntest_uncaptured_hash_and_selector_do_not_return_a_result (test_replay.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.025s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/snapshot-replay",
+    "-p",
+    "test_replay.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 23,
+  "checked_at": "2026-10-13T08:41:41.270264+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

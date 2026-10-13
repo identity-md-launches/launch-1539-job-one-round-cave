@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_three_fields_checked (test_block_field_crosscheck.FieldTests) ... ok\ntest_duplicate_key_and_false_status_rejected (test_block_field_crosscheck.FieldTests) ... ok\ntest_expected_digests (test_block_field_crosscheck.FieldTests) ... ok\ntest_fee_mismatch_that_ancestor_accepts (test_block_field_crosscheck.FieldTests) ... ok\ntest_gas_relationship_rejected (test_block_field_crosscheck.FieldTests) ... ok\ntest_identity_disagreement_cannot_be_hidden_by_field_agreement (test_block_field_crosscheck.FieldTests) ... ok\ntest_malformed_quantities_rejected (test_block_field_crosscheck.FieldTests) ... ok\ntest_missing_field_rejected (test_block_field_crosscheck.FieldTests) ... ok\ntest_real_demo_without_network (test_block_field_crosscheck.FieldTests) ... ok\ntest_receipt_byte_binding (test_block_field_crosscheck.FieldTests) ... ok\ntest_source_after_is_checked (test_block_field_crosscheck.FieldTests) ... ok\ntest_symlink_refused (test_block_field_crosscheck.FieldTests) ... ok\ntest_uppercase_hex_digits_equivalent (test_block_field_crosscheck.FieldTests) ... ok\ntest_wrong_supply_retains_disagreement (test_block_field_crosscheck.FieldTests) ... ok\ntest_zero_and_max_uint256_allowed_for_fee (test_block_field_crosscheck.FieldTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.126s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/block-field-crosscheck",
+    "-p",
+    "test_block_field_crosscheck.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T08:41:39.297156+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

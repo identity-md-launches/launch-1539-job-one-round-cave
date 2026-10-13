@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_demo_cli_and_workspace_file_boundaries (test_groups.GroupTests) ... ok\ntest_different_hash_in_same_position_is_refused (test_groups.GroupTests) ... ok\ntest_empty_window_has_no_transactions (test_groups.GroupTests) ... ok\ntest_forged_decoded_summary_is_refused (test_groups.GroupTests) ... ok\ntest_multiple_transactions_have_chain_order (test_groups.GroupTests) ... ok\ntest_one_hash_across_blocks_is_refused (test_groups.GroupTests) ... ok\ntest_one_hash_with_different_index_is_refused (test_groups.GroupTests) ... ok\ntest_raw_order_and_duplicate_logs_do_not_change_groups (test_groups.GroupTests) ... ok\ntest_real_transaction_and_intermediate_endpoint (test_groups.GroupTests) ... ok\ntest_removed_raw_log_is_refused (test_groups.GroupTests) ... ok\ntest_self_transfer_and_zero_value_touch_once (test_groups.GroupTests) ... ok\ntest_transaction_index_must_follow_block_log_order (test_groups.GroupTests) ... ok\ntest_transaction_positions_restart_in_each_block (test_groups.GroupTests) ... ok\ntest_uint256_amounts_use_integer_math (test_groups.GroupTests) ... ok\ntest_zero_decimals_and_imd_identity (test_groups.GroupTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.274s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-transaction-groups",
+    "-p",
+    "test_groups.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T08:41:55.301280+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

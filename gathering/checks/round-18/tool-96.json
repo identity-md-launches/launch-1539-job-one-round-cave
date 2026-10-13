@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"demo\": \"actual inherited README selected; reproducible; no files written\",\n  \"file_count\": 1,\n  \"format\": \"handoff-subset-v1\",\n  \"note\": \"All source payloads were verified, including omitted files. Selection uses exact paths, without renaming or dependency inference. The new ZIP has its own manifest and digest. This receipt does not authenticate a sender or prove that a subset is runnable or safe.\",\n  \"omitted_paths\": [\n    \"handoff.py\"\n  ],\n  \"payload_bytes\": 2780,\n  \"selected_files\": [\n    {\n      \"bytes\": 2780,\n      \"path\": \"README.md\",\n      \"sha256\": \"930a0c0147a5e4a5a749a08d4c49656aa149126611d771e60864c85c015aafc2\"\n    }\n  ],\n  \"source_archive_bytes\": 13181,\n  \"source_archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"source_file_count\": 2,\n  \"source_trusted_digest_matched\": false,\n  \"subset_archive_bytes\": 3151,\n  \"subset_archive_sha256\": \"d455065051f22c22bc8d436e42adede63507cf34cb3f62f768f44ebb6c7288f5\",\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-subset/subset.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.829196+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

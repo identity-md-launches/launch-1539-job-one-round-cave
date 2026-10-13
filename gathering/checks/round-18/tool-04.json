@@ -1,0 +1,21 @@
+{
+  "exit": 1,
+  "stdout": "",
+  "stderr": "test_bad_http_status_or_compression (test_direct_capture.Tests) ... ok\ntest_cli_failure_emits_no_snapshot_or_provider_text (test_direct_capture.Tests) ... ok\ntest_demo_with_network_creation_disabled (test_direct_capture.Tests) ... ok\ntest_no_proxy_discovery_or_default_urlopen (test_direct_capture.Tests) ... ok\ntest_pinned_reuses_transport_and_original_inspector (test_direct_capture.Tests) ... ok\ntest_pinned_wrong_chain_and_reorg_refused (test_direct_capture.Tests) ... ok\ntest_real_opener_has_empty_proxy_handler_and_redirect_refusal (test_direct_capture.Tests) ... ok\ntest_redirect_http_handlers_cannot_reissue_request (test_direct_capture.Tests) ... test_rejected_endpoint_and_method_before_opener (test_direct_capture.Tests) ... ok\ntest_request_bound_applies_before_opener (test_direct_capture.Tests) ... ok\ntest_response_bound_applies_before_json_parsing (test_direct_capture.Tests) ... ok\ntest_serialized_output_bound (test_direct_capture.Tests) ... ok\ntest_single_capture_ancestor_inspection (test_direct_capture.Tests) ... ok\ntest_strict_response_envelopes (test_direct_capture.Tests) ... ok\n\n======================================================================\nERROR: test_redirect_http_handlers_cannot_reissue_request (test_direct_capture.Tests) (code=308)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/imd1161/.identitymd/work/2bddddc0-5849-4b2c-80a5-ef710a8b254d/0b364847-a0cb-4c7d-ac02-2629a012e11b/test/scratch/round-18-mirror/line-1/tools/direct-capture/test_direct_capture.py\", line 69, in test_redirect_http_handlers_cannot_reissue_request\n    getattr(handler, 'http_error_' + str(code))(\nAttributeError: 'NoRedirect' object has no attribute 'http_error_308'\n\n----------------------------------------------------------------------\nRan 14 tests in 0.038s\n\nFAILED (errors=1)\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/direct-capture",
+    "-p",
+    "test_direct_capture.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T08:41:39.465170+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

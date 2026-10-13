@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_changed_same_size (test_source.SourceTests) ... ok\ntest_cli_match_mismatch_invalid (test_source.SourceTests) ... ok\ntest_directory_budget (test_source.SourceTests) ... ok\ntest_empty_directories_not_payload (test_source.SourceTests) ... ok\ntest_empty_source (test_source.SourceTests) ... ok\ntest_equal (test_source.SourceTests) ... ok\ntest_fifo (test_source.SourceTests) ... ok\ntest_file_count (test_source.SourceTests) ... ok\ntest_invalid_archive_before_source_scan (test_source.SourceTests) ... ok\ntest_metadata_budget (test_source.SourceTests) ... ok\ntest_missing_and_omitted (test_source.SourceTests) ... ok\ntest_payload_budget (test_source.SourceTests) ... ok\ntest_repeat_receipt (test_source.SourceTests) ... ok\ntest_source_reserved_manifest_is_omitted (test_source.SourceTests) ... ok\ntest_symlink_directory (test_source.SourceTests) ... ok\ntest_symlink_file (test_source.SourceTests) ... ok\ntest_symlink_root (test_source.SourceTests) ... ok\ntest_tree_mutation (test_source.SourceTests) ... ok\ntest_trusted_digest (test_source.SourceTests) ... ok\ntest_unsafe_source_paths (test_source.SourceTests) ... ok\ntest_utf8 (test_source.SourceTests) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.046s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-source",
+    "-p",
+    "test_source.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 21,
+  "checked_at": "2026-10-13T08:41:45.190517+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "source": "line-4/tools/transfer-transaction-groups/groups.py",
+    "source_sha256": "8b87f154efb0016d9ba6d3d02fd093dd8cd01ad03456f0bfd37894a4d24c1b50",
+    "copy": "vendor/transfer-transaction-groups/groups.py",
+    "copy_sha256": "8b87f154efb0016d9ba6d3d02fd093dd8cd01ad03456f0bfd37894a4d24c1b50",
+    "adaptations": []
+  },
+  {
+    "source": "line-4/tools/transfer-crosscheck/crosscheck.py",
+    "source_sha256": "374724972a019d56fa46665dc2f1c9f0c8bcd19eb90fe160ab0341d0042ac221",
+    "copy": "vendor/transfer-crosscheck/crosscheck.py",
+    "copy_sha256": "374724972a019d56fa46665dc2f1c9f0c8bcd19eb90fe160ab0341d0042ac221",
+    "adaptations": []
+  },
+  {
+    "source": "line-4/tools/erc20-transfer-window/transfer_window.py",
+    "source_sha256": "a982a006f122b75fb151abfab65e2d8bbb47942220ee5df47110a81a2a30bf09",
+    "copy": "vendor/erc20-transfer-window/transfer_window.py",
+    "copy_sha256": "a982a006f122b75fb151abfab65e2d8bbb47942220ee5df47110a81a2a30bf09",
+    "adaptations": []
+  },
+  {
+    "source": "line-4/tools/strict-rpc-json/strict_rpc.py",
+    "source_sha256": "d138a19db26464bd63b13afc5f7f42051d66b213c632788beb3fb075883138cd",
+    "copy": "vendor/strict-rpc-json/strict_rpc.py",
+    "copy_sha256": "d138a19db26464bd63b13afc5f7f42051d66b213c632788beb3fb075883138cd",
+    "adaptations": []
+  },
+  {
+    "source": "line-4/tools/bounded-capture-reader/reader.py",
+    "source_sha256": "3050d7eef5f544c4bc52f8bfbc08bee37d15907b0d2be7841a25e38187bb56f7",
+    "copy": "vendor/bounded-capture-reader/reader.py",
+    "copy_sha256": "d87d1522a1243bd157c2c3f0e295d451bc38c3b7463c57b8640774269567625b",
+    "adaptations": [
+      "Constrain public input reads to the caller-selected current workspace for portable use."
+    ]
+  },
+  {
+    "source": "line-2/tools/handoff-impact/impact.py",
+    "source_sha256": "0a4b3a37bd47ba92b032cd37c17343e92270f0b4b8abf3dfcd1418f07cc8299a",
+    "copy": "vendor/handoff-impact/impact.py",
+    "copy_sha256": "ee0a1017c08ed9277f5a86b4d75672858714b502dd9523d8562d32c93f2e3cc7",
+    "adaptations": [
+      "Resolve fixed runtime imports from bundled vendor siblings; strip line-2/tools import prefix (including demo references)."
+    ]
+  },
+  {
+    "source": "line-2/tools/handoff-dependencies/dependencies.py",
+    "source_sha256": "3e3fb3899e6de289e5bc91ac2396e4ab23bc40905082f9de1a10a5979d36124c",
+    "copy": "vendor/handoff-dependencies/dependencies.py",
+    "copy_sha256": "0444a2964a688b3bca3f3552307180fa542c3c86546f01e583478074592167d9",
+    "adaptations": [
+      "Resolve fixed runtime imports from bundled vendor siblings; strip line-2/tools import prefix (including demo references)."
+    ]
+  },
+  {
+    "source": "line-2/tools/handoff-subset/subset.py",
+    "source_sha256": "3266695c03cedc1a7cdb09bce3396c72b7ce3bb93c02f37ea4b611731e45bf3f",
+    "copy": "vendor/handoff-subset/subset.py",
+    "copy_sha256": "76e1597b1112ede0e33f5994e5f667c56b2ac22e956fc195e42f9dc7e247f95d",
+    "adaptations": [
+      "Resolve fixed runtime imports from bundled vendor siblings; strip line-2/tools import prefix (including demo references)."
+    ]
+  },
+  {
+    "source": "line-2/tools/handoff-compare/compare_handoff.py",
+    "source_sha256": "67310be1ac39c458c7aa063a267a992115bf889007d5d9c1ac659e45940fec19",
+    "copy": "vendor/handoff-compare/compare_handoff.py",
+    "copy_sha256": "7583f2f86c70e5095c1659083389a8582578e059ee8db6d26ddd57e1fe601790",
+    "adaptations": [
+      "Resolve fixed runtime imports from bundled vendor siblings; strip line-2/tools import prefix (including demo references)."
+    ]
+  },
+  {
+    "source": "line-2/tools/handoff-inspect/inspect_handoff.py",
+    "source_sha256": "62cc8e4b31c231eb394bd5f3053c2db29c05fc4fa62d3aeafe76027a52b8103a",
+    "copy": "vendor/handoff-inspect/inspect_handoff.py",
+    "copy_sha256": "62cc8e4b31c231eb394bd5f3053c2db29c05fc4fa62d3aeafe76027a52b8103a",
+    "adaptations": []
+  },
+  {
+    "source": "line-2/tools/handoff/handoff.py",
+    "source_sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d",
+    "copy": "vendor/handoff/handoff.py",
+    "copy_sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d",
+    "adaptations": []
+  }
+]

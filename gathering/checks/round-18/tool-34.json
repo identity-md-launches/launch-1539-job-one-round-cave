@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_base_fee_above_cap (test_fee_context.FeeTests) ... ok\ntest_canonical_decimal (test_fee_context.FeeTests) ... ok\ntest_cap_boundary (test_fee_context.FeeTests) ... ok\ntest_chain_context (test_fee_context.FeeTests) ... ok\ntest_cli_exit_and_stdin (test_fee_context.FeeTests) ... ok\ntest_context_type_and_range (test_fee_context.FeeTests) ... ok\ntest_full_priority (test_fee_context.FeeTests) ... ok\ntest_independent_random_arithmetic (test_fee_context.FeeTests) ... ok\ntest_invalid_fee_order_even_at_zero_base (test_fee_context.FeeTests) ... ok\ntest_maximum_uint256_exact_products (test_fee_context.FeeTests) ... ok\ntest_original_input_equivalence (test_fee_context.FeeTests) ... ok\ntest_priority_clipped (test_fee_context.FeeTests) ... ok\ntest_reject_signed_ambiguous_summary_and_oversize (test_fee_context.FeeTests) ... ok\ntest_two_violations (test_fee_context.FeeTests) ... ok\ntest_zero_fees_and_gas (test_fee_context.FeeTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.363s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/fee-context",
+    "-p",
+    "test_fee_context.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T08:41:46.691714+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_both_observations_checked (test_header_hash_check.HeaderHashTests) ... ok\ntest_bytes_lengths_and_hex (test_header_hash_check.HeaderHashTests) ... ok\ntest_cli_conflict_is_diagnostic_exit_two (test_header_hash_check.HeaderHashTests) ... ok\ntest_cli_demo (test_header_hash_check.HeaderHashTests) ... ok\ntest_cli_rejects_bad_path (test_header_hash_check.HeaderHashTests) ... ok\ntest_every_header_field_affects_hash (test_header_hash_check.HeaderHashTests) ... ok\ntest_extra_data_limit (test_header_hash_check.HeaderHashTests) ... ok\ntest_fresh_retained_publicnode_capture (test_header_hash_check.HeaderHashTests) ... ok\ntest_keccak_known_answers (test_header_hash_check.HeaderHashTests) ... ok\ntest_missing_fields_refused (test_header_hash_check.HeaderHashTests) ... ok\ntest_no_supply_authentication_claim (test_header_hash_check.HeaderHashTests) ... ok\ntest_quantities_are_canonical_and_bounded (test_header_hash_check.HeaderHashTests) ... ok\ntest_real_snapshot_offline (test_header_hash_check.HeaderHashTests) ... ok\ntest_reported_hash_required (test_header_hash_check.HeaderHashTests) ... ok\ntest_rlp_boundary_vectors (test_header_hash_check.HeaderHashTests) ... ok\ntest_rpc_nonheader_fields_not_committed (test_header_hash_check.HeaderHashTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.356s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/header-hash-check",
+    "-p",
+    "test_header_hash_check.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 16,
+  "checked_at": "2026-10-13T08:41:40.276720+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

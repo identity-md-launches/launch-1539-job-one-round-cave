@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_across_entries_and_first_occurrence (test_access_audit.AuditTests) ... ok\ntest_byte_identity_case_not_text_identity (test_access_audit.AuditTests) ... ok\ntest_cli_status_stdin_and_no_partial_output (test_access_audit.AuditTests) ... ok\ntest_creation_does_not_change_list_charges (test_access_audit.AuditTests) ... ok\ntest_demo_matches_formats_and_has_real_destination (test_access_audit.AuditTests) ... ok\ntest_duplicate_addresses_with_distinct_keys (test_access_audit.AuditTests) ... ok\ntest_empty (test_access_audit.AuditTests) ... ok\ntest_key_is_scoped_to_address (test_access_audit.AuditTests) ... ok\ntest_original_order_retained_and_json_rlp_equivalent (test_access_audit.AuditTests) ... ok\ntest_oversize_rlp_integer (test_access_audit.AuditTests) ... ok\ntest_refuses_ambiguous_malformed_and_oversize (test_access_audit.AuditTests) ... ok\ntest_refuses_signed_json_and_rlp (test_access_audit.AuditTests) ... ok\ntest_seeded_cost_partition (test_access_audit.AuditTests) ... ok\ntest_within_entry_repetition (test_access_audit.AuditTests) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.316s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/access-list-audit",
+    "-p",
+    "test_access_audit.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T08:41:45.773050+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_boundary_and_bounded_read (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_nonfinite_json_rejected (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_refuses_fifo_without_opening_it (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_refuses_leaf_symlink_before_opening_leaf (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_refuses_outside_before_any_open (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_refuses_oversize_before_opening_leaf (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_refuses_symlink_directory (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_refuses_traversal_before_any_open (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_rejects_duplicate_nested_keys (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_rejects_duplicate_receipt_keys (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_rejects_duplicate_result_even_when_last_value_is_valid (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_rejects_malformed_receipt_json (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_rejects_non_pinned_snapshot (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_seal_is_deterministic_and_has_pinned_facts (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_verify_accepts_exact_receipt (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_verify_rejects_changed_receipt (test_snapshot_seal.SnapshotSealTests) ... ok\ntest_whitespace_changes_exact_digest_only (test_snapshot_seal.SnapshotSealTests) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.032s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/snapshot-seal",
+    "-p",
+    "test_snapshot_seal.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 17,
+  "checked_at": "2026-10-13T08:41:41.437676+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

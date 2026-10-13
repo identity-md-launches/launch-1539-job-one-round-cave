@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_byte_boundary (test_strict_rpc.StrictTests) ... ok\ntest_depth_boundary_and_strings (test_strict_rpc.StrictTests) ... ok\ntest_duplicates_at_any_depth_including_escaped_keys (test_strict_rpc.StrictTests) ... ok\ntest_envelope_error_exclusivity_and_ids (test_strict_rpc.StrictTests) ... ok\ntest_invalid_encoding_and_syntax (test_strict_rpc.StrictTests) ... ok\ntest_nonfinite_numbers_in_results_and_unused_fields (test_strict_rpc.StrictTests) ... ok\ntest_retained_real_zto_logs_unchanged (test_strict_rpc.StrictTests) ... ok\ntest_transport_rejects_raw_ambiguous_bytes (test_strict_rpc.StrictTests) ... ok\ntest_valid_scalars_and_exact_integers (test_strict_rpc.StrictTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.007s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/strict-rpc-json",
+    "-p",
+    "test_strict_rpc.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T08:41:54.598958+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

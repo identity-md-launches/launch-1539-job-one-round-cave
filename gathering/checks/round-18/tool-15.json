@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_consecutive_parent_link_conflict (test_snapshot_timeline.TimelineTests) ... ok\ntest_demo_command (test_snapshot_timeline.TimelineTests) ... ok\ntest_different_hash_at_same_height (test_snapshot_timeline.TimelineTests) ... ok\ntest_duplicate_keys_rejected (test_snapshot_timeline.TimelineTests) ... ok\ntest_limits (test_snapshot_timeline.TimelineTests) ... ok\ntest_modified_result_without_matching_after_rejected (test_snapshot_timeline.TimelineTests) ... ok\ntest_real_observations_offline (test_snapshot_timeline.TimelineTests) ... ok\ntest_same_hash_different_header (test_snapshot_timeline.TimelineTests) ... ok\ntest_supply_conflict_at_same_hash (test_snapshot_timeline.TimelineTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.017s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/snapshot-timeline",
+    "-p",
+    "test_snapshot_timeline.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T08:41:41.569574+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

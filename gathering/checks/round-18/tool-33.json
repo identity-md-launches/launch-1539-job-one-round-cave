@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_supported_static_calls (test_intent.IntentTests) ... ok\ntest_approval_boundaries (test_intent.IntentTests) ... ok\ntest_cli_demo_and_usage (test_intent.IntentTests) ... ok\ntest_exact_lengths_reject_truncation_and_trailing_bytes (test_intent.IntentTests) ... ok\ntest_labels_require_ethereum_chain (test_intent.IntentTests) ... ok\ntest_malformed_envelopes_still_rejected (test_intent.IntentTests) ... ok\ntest_nonzero_address_padding_rejected_in_every_position (test_intent.IntentTests) ... ok\ntest_random_uint256_amounts_preserved_exactly (test_intent.IntentTests) ... ok\ntest_unknown_empty_short_and_creation_calldata (test_intent.IntentTests) ... ok\ntest_value_fee_order_and_oversize_warnings (test_intent.IntentTests) ... ok\ntest_zto_demo_and_exact_budget (test_intent.IntentTests) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.015s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/erc20-intent",
+    "-p",
+    "test_intent.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 11,
+  "checked_at": "2026-10-13T08:41:46.250489+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_bounded_read_and_duplicate_keys (test_ledger.LedgerTests) ... ok\ntest_cli_demo (test_ledger.LedgerTests) ... ok\ntest_delivery_order_and_duplicates_do_not_change_report (test_ledger.LedgerTests) ... ok\ntest_empty_window (test_ledger.LedgerTests) ... ok\ntest_large_integer_aggregation_and_negative_units (test_ledger.LedgerTests) ... ok\ntest_outside_path_is_rejected_before_open (test_ledger.LedgerTests) ... ok\ntest_real_zto_matches_native_address_summary (test_ledger.LedgerTests) ... ok\ntest_removed_log_is_rejected (test_ledger.LedgerTests) ... ok\ntest_self_transfer (test_ledger.LedgerTests) ... ok\ntest_tampered_event_type_is_rejected (test_ledger.LedgerTests) ... ok\ntest_zero_endpoint_is_retained (test_ledger.LedgerTests) ... ok\ntest_zero_value_event_counts (test_ledger.LedgerTests) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.013s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-window-ledger",
+    "-p",
+    "test_ledger.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 12,
+  "checked_at": "2026-10-13T08:41:55.665166+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

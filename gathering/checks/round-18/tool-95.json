@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_hash\": \"0xfffa2f6981064c0c17c939eae510a1d8e9add2b9775e1dab07cf4f2b196dae27\",\n  \"block_number\": \"26180977\",\n  \"crosscheck_sha256\": \"a4677101e8a3a76796ed2db069671ebdbdb1682e5a35abcfa7caf1297c8b86fd\",\n  \"disagreeing_fields\": [],\n  \"evidence_limits\": \"Comparison of three named header quantities in four saved provider responses. No header-hash recomputation, signature, independence, honesty, finality, or current-state proof. Agreement does not corroborate other block fields.\",\n  \"fields\": {\n    \"baseFeePerGas\": {\n      \"agreement\": true,\n      \"observations\": {\n        \"second_after\": \"62474707\",\n        \"second_before\": \"62474707\",\n        \"source_after\": \"62474707\",\n        \"source_before\": \"62474707\"\n      },\n      \"unit\": \"wei_per_gas\"\n    },\n    \"gasLimit\": {\n      \"agreement\": true,\n      \"observations\": {\n        \"second_after\": \"60000000\",\n        \"second_before\": \"60000000\",\n        \"source_after\": \"60000000\",\n        \"source_before\": \"60000000\"\n      },\n      \"unit\": \"gas\"\n    },\n    \"gasUsed\": {\n      \"agreement\": true,\n      \"observations\": {\n        \"second_after\": \"33246298\",\n        \"second_before\": \"33246298\",\n        \"source_after\": \"33246298\",\n        \"source_before\": \"33246298\"\n      },\n      \"unit\": \"gas\"\n    }\n  },\n  \"identity_and_supply_status\": \"agreement\",\n  \"network_used\": false,\n  \"schema\": \"zto-block-field-crosscheck/1\",\n  \"second_endpoint\": \"https://eth.drpc.org\",\n  \"source_endpoint\": \"https://ethereum-rpc.publicnode.com\",\n  \"source_sha256\": \"2c96bd645a2147861f2e37f82a96da461c84c912be673cf856033db2b3bd0fcb\",\n  \"status\": \"agreement\",\n  \"token\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"total_supply_base_units\": \"1000000000000000000000000000\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/block-field-crosscheck/block_field_crosscheck.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.758417+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

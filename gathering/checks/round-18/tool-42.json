@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_access_list_must_match_exact_order_and_duplicate_slots (test_guard.GuardTests) ... ok\ntest_bad_envelopes_are_rejected_before_any_report (test_guard.GuardTests) ... ok\ntest_cli_exit_codes_and_no_partial_json (test_guard.GuardTests) ... ok\ntest_contract_creation_requires_explicit_creation_destination (test_guard.GuardTests) ... ok\ntest_each_exact_field_mutation_is_reported (test_guard.GuardTests) ... ok\ntest_fee_caps_are_upper_bounds_and_priority_order_is_checked (test_guard.GuardTests) ... ok\ntest_policy_input_rejects_ambiguity_and_oversize (test_guard.GuardTests) ... ok\ntest_synthetic_zto_demo_matches_all_fields (test_guard.GuardTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.008s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/unsigned-guard",
+    "-p",
+    "test_guard.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 8,
+  "checked_at": "2026-10-13T08:41:48.086282+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

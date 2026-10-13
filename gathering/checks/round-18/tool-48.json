@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_empty_window (test_counterparties.CounterpartyTests) ... ok\ntest_filter_and_normalize (test_counterparties.CounterpartyTests) ... ok\ntest_order_and_duplicate_delivery (test_counterparties.CounterpartyTests) ... ok\ntest_outside_workspace_rejected_before_open (test_counterparties.CounterpartyTests) ... ok\ntest_real_demo (test_counterparties.CounterpartyTests) ... ok\ntest_removed_log_rejected (test_counterparties.CounterpartyTests) ... ok\ntest_same_pair_aggregation_and_uint256_precision (test_counterparties.CounterpartyTests) ... ok\ntest_self_transfer_counts_once (test_counterparties.CounterpartyTests) ... ok\ntest_tamper_rejected (test_counterparties.CounterpartyTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.008s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-counterparties",
+    "-p",
+    "test_counterparties.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T08:41:54.720646+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

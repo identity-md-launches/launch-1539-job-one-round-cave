@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "line_files_unchanged": 411,
+  "records": 173,
+  "line_suites": 55,
+  "line_tests_attempted": 706,
+  "native_test_limitations": [
+    "Python 3.10 direct-capture handler-introspection subtest fails; actual redirect pipeline passes.",
+    "Line 2 impact tests require absolute scratch tempfile dir on Python 3.10."
+  ],
+  "offline_commands": 54,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "wall_sha256": "6497f76c8a44bb0c7e9080bb7059b57580d4947e02713930d54758b4028aa3be",
+  "unmet_visual_requirements": [],
+  "shared_integration_tests": 16,
+  "review_limit": "Structural checks plus recorded local visual review; not artistic certification."
+}

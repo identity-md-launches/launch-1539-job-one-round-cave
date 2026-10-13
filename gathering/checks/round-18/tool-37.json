@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_cli_reports_errors_without_partial_json (test_keccak_envelope.KeccakEnvelopeTests) ... ok\ntest_demo_matches_public_rpc_reference (test_keccak_envelope.KeccakEnvelopeTests) ... ok\ntest_ethereum_keccak_is_not_sha3 (test_keccak_envelope.KeccakEnvelopeTests) ... ok\ntest_multiblock_envelopes_match_public_rpc_reference (test_keccak_envelope.KeccakEnvelopeTests) ... ok\ntest_one_fee_change_changes_fingerprint_and_summary (test_keccak_envelope.KeccakEnvelopeTests) ... ok\ntest_rejects_signed_and_malformed_envelopes (test_keccak_envelope.KeccakEnvelopeTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.111s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/keccak-envelope",
+    "-p",
+    "test_keccak_envelope.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 6,
+  "checked_at": "2026-10-13T08:41:47.489661+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,21 @@
+test_corrupt_and_noncanonical_zip_refused (test_group_handoff.Tests) ... ok
+test_empty_window (test_group_handoff.Tests) ... ok
+test_exact_bytes_and_reproducibility (test_group_handoff.Tests) ... ok
+test_false_decoded_capture_refused (test_group_handoff.Tests) ... ok
+test_forged_report_with_valid_manifest_refused (test_group_handoff.Tests) ... ok
+test_graph_omission_and_extra_payloads_refused (test_group_handoff.Tests) ... ok
+test_identical_revision_and_trusted_digests (test_group_handoff.Tests) ... ok
+test_no_follow_file_boundaries (test_group_handoff.Tests) ... ok
+test_offline_demo (test_group_handoff.Tests) ... ok
+test_output_never_overwrites_or_follows_links (test_group_handoff.Tests) ... ok
+test_provenance (test_group_handoff.Tests) ... ok
+test_real_groups_and_zero_net_router (test_group_handoff.Tests) ... ok
+test_source_byte_revision_impacts_unchanged_report (test_group_handoff.Tests) ... ok
+test_standalone_cli_and_revision_exit (test_group_handoff.Tests) ... ok
+test_strict_json_and_limits (test_group_handoff.Tests) ... ok
+test_transaction_position_conflict_refused (test_group_handoff.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.435s
+
+OK

@@ -1,0 +1,600 @@
+[
+  {
+    "path": "line-4/tools/bounded-capture-reader/reader.py",
+    "sha256": "3050d7eef5f544c4bc52f8bfbc08bee37d15907b0d2be7841a25e38187bb56f7",
+    "io_calls": [
+      {
+        "line": 123,
+        "call": "read_capture(path)"
+      },
+      {
+        "line": 83,
+        "call": "os.open(ROOT, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)"
+      },
+      {
+        "line": 89,
+        "call": "os.open(parts[-1], os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=directory)"
+      },
+      {
+        "line": 85,
+        "call": "os.open(part, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=directory)"
+      },
+      {
+        "line": 96,
+        "call": "os.fdopen(descriptor, 'rb')"
+      },
+      {
+        "line": 98,
+        "call": "stream.read(max_bytes + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/bounded-capture-reader/test_companions.py",
+    "sha256": "3d4b7121d77e2b7934258685969033363f429c159c8f904fc908993e34c4a268",
+    "io_calls": [
+      {
+        "line": 29,
+        "call": "scratch.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 30,
+        "call": "tempfile.TemporaryDirectory(dir=scratch)"
+      },
+      {
+        "line": 34,
+        "call": "self.path.write_bytes(SOURCE.read_bytes())"
+      },
+      {
+        "line": 67,
+        "call": "link.symlink_to(self.path)"
+      },
+      {
+        "line": 72,
+        "call": "link.symlink_to(self.folder, target_is_directory=True)"
+      },
+      {
+        "line": 77,
+        "call": "child.mkdir()"
+      },
+      {
+        "line": 92,
+        "call": "self.path.write_bytes(b'{\"raw_logs\":[],\"raw_logs\":[]}')"
+      },
+      {
+        "line": 102,
+        "call": "self.path.write_bytes(b'[' * 65 + b'0' + b']' * 65)"
+      },
+      {
+        "line": 106,
+        "call": "self.path.write_bytes(b'\\xff')"
+      },
+      {
+        "line": 34,
+        "call": "SOURCE.read_bytes()"
+      },
+      {
+        "line": 111,
+        "call": "self.path.open('wb')"
+      },
+      {
+        "line": 112,
+        "call": "stream.truncate(ledger.MAX_BYTES + 1)"
+      },
+      {
+        "line": 46,
+        "call": "subprocess.run([sys.executable, '-B', str(script), *args], cwd=ROOT, capture_output=True, text=True, timeout=5)"
+      },
+      {
+        "line": 56,
+        "call": "subprocess.run([sys.executable, '-B', str(script), *args], cwd=ROOT, capture_output=True, text=True, timeout=5)"
+      },
+      {
+        "line": 98,
+        "call": "self.path.write_bytes(raw)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/bounded-capture-reader/test_reader.py",
+    "sha256": "d3d9c927a531fe517cd81c590e1e1b702de3f7e84f4a0229e987c724559ab567",
+    "io_calls": [
+      {
+        "line": 33,
+        "call": "scratch.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 34,
+        "call": "tempfile.TemporaryDirectory(dir=scratch)"
+      },
+      {
+        "line": 38,
+        "call": "self.path.write_text('{\"ok\":true}')"
+      },
+      {
+        "line": 65,
+        "call": "link.symlink_to(self.path)"
+      },
+      {
+        "line": 71,
+        "call": "link.symlink_to(self.root, target_is_directory=True)"
+      },
+      {
+        "line": 83,
+        "call": "subprocess.run([sys.executable, '-B', str(HERE / 'reader.py'), '--capture', str(fifo)], cwd=ROOT, capture_output=True, text=True, timeout=5)"
+      },
+      {
+        "line": 98,
+        "call": "self.path.write_text('[' * 2000 + ']' * 2000)"
+      },
+      {
+        "line": 104,
+        "call": "self.path.write_text(json.dumps(value))"
+      },
+      {
+        "line": 106,
+        "call": "self.path.write_text('[' * 64 + '0' + ']' * 64)"
+      },
+      {
+        "line": 108,
+        "call": "self.path.write_text('[' * 65 + '0' + ']' * 65)"
+      },
+      {
+        "line": 127,
+        "call": "fake_stream.read.assert_called_once_with(13)"
+      },
+      {
+        "line": 131,
+        "call": "link.symlink_to(self.path)"
+      },
+      {
+        "line": 146,
+        "call": "self.path.write_text('{\"a\":NaN}')"
+      },
+      {
+        "line": 43,
+        "call": "reader.main(['--demo'])"
+      },
+      {
+        "line": 49,
+        "call": "reader.read_capture(self.path, 11)"
+      },
+      {
+        "line": 51,
+        "call": "reader.read_capture(self.path, 10)"
+      },
+      {
+        "line": 67,
+        "call": "reader.read_capture(link)"
+      },
+      {
+        "line": 73,
+        "call": "reader.read_capture(link / 'capture.json')"
+      },
+      {
+        "line": 100,
+        "call": "reader.read_capture(self.path)"
+      },
+      {
+        "line": 105,
+        "call": "reader.read_capture(self.path)"
+      },
+      {
+        "line": 107,
+        "call": "reader.read_capture(self.path)"
+      },
+      {
+        "line": 110,
+        "call": "reader.read_capture(self.path)"
+      },
+      {
+        "line": 148,
+        "call": "subprocess.run([sys.executable, '-B', consumer.__file__, '--capture', str(self.path)], cwd=ROOT, capture_output=True, text=True, timeout=5)"
+      },
+      {
+        "line": 56,
+        "call": "reader.read_capture(ROOT.parent / 'not-a-real-input.json')"
+      },
+      {
+        "line": 61,
+        "call": "reader.read_capture(self.root / '..' / 'capture.json')"
+      },
+      {
+        "line": 78,
+        "call": "reader.read_capture(path)"
+      },
+      {
+        "line": 93,
+        "call": "self.path.write_bytes(raw)"
+      },
+      {
+        "line": 115,
+        "call": "reader.read_capture(self.path, limit)"
+      },
+      {
+        "line": 126,
+        "call": "reader.read_capture(self.path, 12)"
+      },
+      {
+        "line": 95,
+        "call": "reader.read_capture(self.path)"
+      },
+      {
+        "line": 135,
+        "call": "consumer.read_capture(path)"
+      },
+      {
+        "line": 138,
+        "call": "consumer.read_capture(self.path)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/erc20-transfer-window/test_transfer_window.py",
+    "sha256": "f122d33b6081360f698dd01bc20133443668f56360851a264082a68b99a05655",
+    "io_calls": [
+      {
+        "line": 16,
+        "call": "Path(__file__).with_name('observed_logs.json').read_text()"
+      },
+      {
+        "line": 190,
+        "call": "window.public_opener()"
+      },
+      {
+        "line": 223,
+        "call": "threading.Thread(target=server.serve_forever, daemon=True)"
+      },
+      {
+        "line": 224,
+        "call": "thread.start()"
+      },
+      {
+        "line": 274,
+        "call": "opener.assert_not_called()"
+      },
+      {
+        "line": 294,
+        "call": "opener.assert_not_called()"
+      },
+      {
+        "line": 203,
+        "call": "self.rfile.read(int(self.headers['Content-Length']))"
+      },
+      {
+        "line": 234,
+        "call": "thread.join(timeout=5)"
+      },
+      {
+        "line": 216,
+        "call": "self.wfile.write(b'{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":\"0x1\"}')"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/erc20-transfer-window/transfer_window.py",
+    "sha256": "a982a006f122b75fb151abfab65e2d8bbb47942220ee5df47110a81a2a30bf09",
+    "io_calls": [
+      {
+        "line": 54,
+        "call": "urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())"
+      },
+      {
+        "line": 73,
+        "call": "public_opener().open(request, timeout=25)"
+      },
+      {
+        "line": 74,
+        "call": "response.read(MAX_RESPONSE_BYTES + 1)"
+      },
+      {
+        "line": 73,
+        "call": "public_opener()"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/strict-rpc-json/strict_rpc.py",
+    "sha256": "d138a19db26464bd63b13afc5f7f42051d66b213c632788beb3fb075883138cd",
+    "io_calls": [
+      {
+        "line": 58,
+        "call": "reader.read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      },
+      {
+        "line": 31,
+        "call": "reader.check_nesting(raw)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/strict-rpc-json/test_strict_rpc.py",
+    "sha256": "2b39bc6fa99e91c79f58bdd8522123428d485e9ea5be278a41a6337c54d489fb",
+    "io_calls": [
+      {
+        "line": 23,
+        "call": "strict.reader.read_capture(strict.HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-counterparties/counterparties.py",
+    "sha256": "1693cfbf3f37450aaae2920850d85abcfae14bac3ada31ab965de152d3f6a4a5",
+    "io_calls": [
+      {
+        "line": 69,
+        "call": "activity.read_capture(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-counterparties/test_counterparties.py",
+    "sha256": "ca080ca6b60cb3be5f386e02d2797a05f4cc41a0500f226959c3f80b5c841479",
+    "io_calls": [
+      {
+        "line": 15,
+        "call": "tool.activity.read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-crosscheck/crosscheck.py",
+    "sha256": "374724972a019d56fa46665dc2f1c9f0c8bcd19eb90fe160ab0341d0042ac221",
+    "io_calls": [
+      {
+        "line": 150,
+        "call": "(HERE / name).read_text()"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-crosscheck/test_crosscheck.py",
+    "sha256": "adc8b5bafed5d0029b4aca6d10c33e14e0c9def93907e165a5b7222504195076",
+    "io_calls": [
+      {
+        "line": 14,
+        "call": "(Path(__file__).parent / name).read_text()"
+      },
+      {
+        "line": 156,
+        "call": "(Path(__file__).parent / name).read_text()"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-transaction-groups/groups.py",
+    "sha256": "8b87f154efb0016d9ba6d3d02fd093dd8cd01ad03456f0bfd37894a4d24c1b50",
+    "io_calls": [
+      {
+        "line": 117,
+        "call": "reader.read_capture(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-transaction-groups/test_groups.py",
+    "sha256": "e55ec47c4aa4b1ea029cc76f4f0f5dedc16995d90d4e99b90986369e536d5648",
+    "io_calls": [
+      {
+        "line": 20,
+        "call": "groups.reader.read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      },
+      {
+        "line": 144,
+        "call": "subprocess.run([sys.executable, '-B', str(HERE / 'groups.py'), '--demo'], cwd=ROOT, capture_output=True, text=True, timeout=10)"
+      },
+      {
+        "line": 149,
+        "call": "scratch.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 150,
+        "call": "tempfile.TemporaryDirectory(dir=scratch)"
+      },
+      {
+        "line": 152,
+        "call": "target.write_text(json.dumps(self.capture))"
+      },
+      {
+        "line": 154,
+        "call": "link.symlink_to(target)"
+      },
+      {
+        "line": 157,
+        "call": "subprocess.run([sys.executable, '-B', str(HERE / 'groups.py'), '--capture', str(path)], cwd=ROOT, capture_output=True, text=True, timeout=10)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-activity/activity.py",
+    "sha256": "8d629fcaf3c5fe716f15c9a0874a3fde0804ad0574169b10e9b2c90c14f3f67f",
+    "io_calls": [
+      {
+        "line": 40,
+        "call": "reader.read_capture(path, max_bytes=MAX_CAPTURE_BYTES)"
+      },
+      {
+        "line": 61,
+        "call": "runs.append({'state': 'populated' if prior else 'empty', 'from_block': run_start, 'to_block': end, 'block_count': end - run_start + 1})"
+      },
+      {
+        "line": 54,
+        "call": "runs.append({'state': 'populated' if prior else 'empty', 'from_block': run_start, 'to_block': block - 1, 'block_count': block - run_start})"
+      },
+      {
+        "line": 97,
+        "call": "read_capture(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-activity/test_activity.py",
+    "sha256": "edac3b3fdde94a1ab92a89491f5764e30a3d7220286b0127facac38d9bb5a950",
+    "io_calls": [
+      {
+        "line": 17,
+        "call": "(HERE.parent / 'transfer-crosscheck' / 'publicnode.json').read_text()"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-coverage/coverage.py",
+    "sha256": "024fa8795d3ca0fd87776b0893aaebbcd68d82ac3676f531867ef09eb4dd58a3",
+    "io_calls": [
+      {
+        "line": 40,
+        "call": "reader.read_capture(path, max_bytes=MAX_CAPTURE_BYTES)"
+      },
+      {
+        "line": 105,
+        "call": "read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      },
+      {
+        "line": 107,
+        "call": "read_capture(args.capture)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-coverage/test_coverage.py",
+    "sha256": "abb18a2d834128294d12c44b00a11c07e559afd06a125ddae3dbcee4b0cc5566",
+    "io_calls": [
+      {
+        "line": 60,
+        "call": "duplicate.write_text('{\"token\":\"ZTO\",\"token\":\"IMD\"}')"
+      },
+      {
+        "line": 20,
+        "call": "(HERE.parent / 'transfer-crosscheck' / 'publicnode.json').read_text()"
+      },
+      {
+        "line": 63,
+        "call": "coverage.read_capture(duplicate)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-ledger/ledger.py",
+    "sha256": "61f0eeefe5a14eaa51a041bfecc44a6518fe26712c270ad3ef4254ebf4d60fca",
+    "io_calls": [
+      {
+        "line": 22,
+        "call": "activity.reader.read_capture(path, max_bytes=MAX_BYTES)"
+      },
+      {
+        "line": 92,
+        "call": "read_capture(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-ledger/test_ledger.py",
+    "sha256": "16368ce9788be59316ef6211bc4de4f148325e4f5c88fb581a206bfe511ed5b7",
+    "io_calls": [
+      {
+        "line": 17,
+        "call": "tool.read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      },
+      {
+        "line": 118,
+        "call": "scratch.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 119,
+        "call": "tempfile.TemporaryDirectory(dir=scratch)"
+      },
+      {
+        "line": 112,
+        "call": "tool.read_capture('/outside/never-read.json')"
+      },
+      {
+        "line": 123,
+        "call": "path.write_bytes(data)"
+      },
+      {
+        "line": 126,
+        "call": "tool.read_capture(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-receipt/receipt.py",
+    "sha256": "8f53d53ad231ea8df0fa85b0448b67de294eacc3d586993bba444095154d1809",
+    "io_calls": [
+      {
+        "line": 37,
+        "call": "reader.read_capture(path, max_bytes=MAX_CAPTURE_BYTES)"
+      },
+      {
+        "line": 86,
+        "call": "read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      },
+      {
+        "line": 88,
+        "call": "read_capture(args.capture)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-receipt/test_receipt.py",
+    "sha256": "1f234f2c0386c38a935674254088dbe8f3c0a3048d373d8f031d1f4672ea51c0",
+    "io_calls": [
+      {
+        "line": 52,
+        "call": "duplicate.write_text('{\"token\":\"ZTO\",\"token\":\"IMD\"}')"
+      },
+      {
+        "line": 19,
+        "call": "(HERE.parent / 'transfer-crosscheck' / 'publicnode.json').read_text()"
+      },
+      {
+        "line": 55,
+        "call": "receipt.read_capture(duplicate)"
+      },
+      {
+        "line": 58,
+        "call": "receipt.read_capture(duplicate)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-stitch/stitch.py",
+    "sha256": "53a8d44a0ed805f23f5a3ca8de9c380ef5760c1b81eaa44b0b7b9bcbab1b60ab",
+    "io_calls": [
+      {
+        "line": 93,
+        "call": "ledger.read_capture(HERE.parent / 'transfer-crosscheck' / 'publicnode.json')"
+      },
+      {
+        "line": 94,
+        "call": "ledger.read_capture(HERE.parent / 'transfer-crosscheck' / 'drpc.json')"
+      },
+      {
+        "line": 123,
+        "call": "ledger.read_capture(args.left)"
+      },
+      {
+        "line": 123,
+        "call": "ledger.read_capture(args.right)"
+      }
+    ]
+  },
+  {
+    "path": "line-4/tools/transfer-window-stitch/test_stitch.py",
+    "sha256": "3fbb54e6665172c2126d6b311bc338c1a9435268703acacdeb31655515a5e775",
+    "io_calls": [
+      {
+        "line": 47,
+        "call": "tool.ledger.read_capture(HERE.parent / 'transfer-crosscheck' / 'round-27-live-zto.json')"
+      },
+      {
+        "line": 56,
+        "call": "tool.ledger.read_capture(HERE.parent / 'transfer-crosscheck' / 'round-27-live-zto.json')"
+      },
+      {
+        "line": 107,
+        "call": "tool.ledger.read_capture(HERE.parent / 'transfer-crosscheck' / 'round-27-live-zto.json')"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1311 @@
+[
+  {
+    "path": "line-2/tools/handoff/handoff.py",
+    "sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d",
+    "io_calls": [
+      {
+        "line": 50,
+        "call": "os.open(path, os.O_RDONLY | getattr(os, 'O_NOFOLLOW', 0) | getattr(os, 'O_NONBLOCK', 0))"
+      },
+      {
+        "line": 41,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 52,
+        "call": "os.fdopen(fd, 'rb')"
+      },
+      {
+        "line": 55,
+        "call": "handle.read(limit + 1)"
+      },
+      {
+        "line": 147,
+        "call": "archive.read(MANIFEST)"
+      },
+      {
+        "line": 70,
+        "call": "(Path(directory) / name).is_symlink()"
+      },
+      {
+        "line": 110,
+        "call": "archive.writestr(entry, data)"
+      },
+      {
+        "line": 171,
+        "call": "archive.read(name)"
+      },
+      {
+        "line": 191,
+        "call": "original.read(entry.filename)"
+      },
+      {
+        "line": 194,
+        "call": "altered.writestr(entry, content)"
+      },
+      {
+        "line": 224,
+        "call": "output.open('xb')"
+      },
+      {
+        "line": 225,
+        "call": "handle.write(data)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-catalog/catalog.py",
+    "sha256": "010341a13db84e8849c6d07ed2f31c2ee4c3af5bb78d6b43d01acc7b1bbe7d5d",
+    "io_calls": [
+      {
+        "line": 36,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 124,
+        "call": "target.open('xb')"
+      },
+      {
+        "line": 125,
+        "call": "stream.write(data)"
+      },
+      {
+        "line": 151,
+        "call": "exclusive_write(args.output, data)"
+      },
+      {
+        "line": 155,
+        "call": "workspace_file(args.catalog).read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-catalog/test_catalog.py",
+    "sha256": "0147467e304b12552f7108d79700112d439f2eaa20e6fe82d995a51cf0f7d956",
+    "io_calls": [
+      {
+        "line": 20,
+        "call": "scratch.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 29,
+        "call": "self.a.write_bytes(module.build({'one.txt': b'one\\n'}))"
+      },
+      {
+        "line": 30,
+        "call": "self.b.write_bytes(module.build({'two.txt': b'two\\n'}))"
+      },
+      {
+        "line": 50,
+        "call": "self.a.write_bytes(b'not a handoff')"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-compare/compare_handoff.py",
+    "sha256": "67310be1ac39c458c7aa063a267a992115bf889007d5d9c1ac659e45940fec19",
+    "io_calls": [
+      {
+        "line": 19,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 80,
+        "call": "archive.read(item['path'])"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-compare/test_compare.py",
+    "sha256": "6c3b00e696d06459a51cc3a482299b010777cac5ca1a40f3c165c63aa4f2f117",
+    "io_calls": [
+      {
+        "line": 87,
+        "call": "Path('line-2/handoff.zip').read_bytes()"
+      },
+      {
+        "line": 151,
+        "call": "directory.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 153,
+        "call": "link.is_symlink()"
+      },
+      {
+        "line": 155,
+        "call": "link.symlink_to('../../../line-2/handoff.zip')"
+      },
+      {
+        "line": 163,
+        "call": "subprocess.run([sys.executable, '-B', 'line-2/tools/handoff-compare/compare_handoff.py', 'demo'], capture_output=True, text=True, check=True)"
+      },
+      {
+        "line": 154,
+        "call": "link.unlink()"
+      },
+      {
+        "line": 160,
+        "call": "link.unlink()"
+      },
+      {
+        "line": 52,
+        "call": "output.writestr(info, source.read(info.filename))"
+      },
+      {
+        "line": 119,
+        "call": "source.read(info.filename)"
+      },
+      {
+        "line": 120,
+        "call": "output.writestr(info, b'NEW' if info.filename == 'edit.txt' else content)"
+      },
+      {
+        "line": 52,
+        "call": "source.read(info.filename)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-content/content.py",
+    "sha256": "f051891097b0e681362d8d23785d6da07cf4523494a75c01a0cb304ff54c616f",
+    "io_calls": [
+      {
+        "line": 87,
+        "call": "os.open(workspace_path(raw), os.O_RDONLY | getattr(os, 'O_NOFOLLOW', 0) | getattr(os, 'O_NONBLOCK', 0))"
+      },
+      {
+        "line": 128,
+        "call": "read_expectation(expectation)"
+      },
+      {
+        "line": 27,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 92,
+        "call": "os.fdopen(fd, 'rb')"
+      },
+      {
+        "line": 96,
+        "call": "handle.read(MAX_EXPECTATION + 1)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-content/test_content.py",
+    "sha256": "b3484af0bd8e36871e57cad1b8172f6efead4da28ee7b3e03122cfc89a767d6e",
+    "io_calls": [
+      {
+        "line": 25,
+        "call": "Path('test/scratch').mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 26,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 31,
+        "call": "self.archive.write_bytes(writer.build({'a.txt': b'original', 'nested/empty': b''}))"
+      },
+      {
+        "line": 36,
+        "call": "self.expected.write_text(json.dumps(self.expectation), encoding='utf-8')"
+      },
+      {
+        "line": 46,
+        "call": "self.archive.write_bytes(writer.build({'\u00e9/\ud83d\udc38': b'hello'}))"
+      },
+      {
+        "line": 52,
+        "call": "self.archive.write_bytes(writer.build({'a.txt': b'modified', 'nested/empty': b''}))"
+      },
+      {
+        "line": 64,
+        "call": "self.archive.write_bytes(writer.build({'a.txt': b'original', 'extra': b'x'}))"
+      },
+      {
+        "line": 71,
+        "call": "self.archive.write_bytes(writer.build({'a.txt': b'original', 'nested/empty': b'', 'extra': b'x'}))"
+      },
+      {
+        "line": 102,
+        "call": "self.archive.write_bytes(b'not an archive')"
+      },
+      {
+        "line": 111,
+        "call": "link.symlink_to('expected.json')"
+      },
+      {
+        "line": 122,
+        "call": "self.archive.write_bytes(writer.build({'different': b'x'}))"
+      },
+      {
+        "line": 126,
+        "call": "self.expected.write_text('invalid')"
+      },
+      {
+        "line": 31,
+        "call": "writer.build({'a.txt': b'original', 'nested/empty': b''})"
+      },
+      {
+        "line": 46,
+        "call": "writer.build({'\u00e9/\ud83d\udc38': b'hello'})"
+      },
+      {
+        "line": 52,
+        "call": "writer.build({'a.txt': b'modified', 'nested/empty': b''})"
+      },
+      {
+        "line": 64,
+        "call": "writer.build({'a.txt': b'original', 'extra': b'x'})"
+      },
+      {
+        "line": 71,
+        "call": "writer.build({'a.txt': b'original', 'nested/empty': b'', 'extra': b'x'})"
+      },
+      {
+        "line": 113,
+        "call": "content.read_expectation(str(link))"
+      },
+      {
+        "line": 115,
+        "call": "content.read_expectation(str(self.root))"
+      },
+      {
+        "line": 122,
+        "call": "writer.build({'different': b'x'})"
+      },
+      {
+        "line": 109,
+        "call": "content.read_expectation(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-contract/contract.py",
+    "sha256": "43971b15bb6892e9329043c3418407036d05917b17f0d5564764fe8926b85578",
+    "io_calls": [
+      {
+        "line": 19,
+        "call": "current.is_symlink()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-contract/test_contract.py",
+    "sha256": "d337d7e8970d43772ff272e6eadc7f1a43d6d7df9d0146c2dca7bf3c06d58da7",
+    "io_calls": []
+  },
+  {
+    "path": "line-2/tools/handoff-dependencies/dependencies.py",
+    "sha256": "3e3fb3899e6de289e5bc91ac2396e4ab23bc40905082f9de1a10a5979d36124c",
+    "io_calls": [
+      {
+        "line": 18,
+        "call": "path.is_symlink()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-dependencies/test_dependencies.py",
+    "sha256": "937f263e04f886433d6c0ed7094d38c61e8e9c18599349f1b082cd71122ab679",
+    "io_calls": [
+      {
+        "line": 147,
+        "call": "root.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 149,
+        "call": "link.is_symlink()"
+      },
+      {
+        "line": 150,
+        "call": "link.symlink_to('missing.zip')"
+      },
+      {
+        "line": 167,
+        "call": "root.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 172,
+        "call": "self.run_cli(args)"
+      },
+      {
+        "line": 176,
+        "call": "self.run_cli(args + ['--output', str(output)])"
+      },
+      {
+        "line": 178,
+        "call": "output.read_bytes()"
+      },
+      {
+        "line": 180,
+        "call": "self.run_cli(args + ['--output', str(output)])"
+      },
+      {
+        "line": 186,
+        "call": "output.unlink()"
+      },
+      {
+        "line": 191,
+        "call": "self.run_cli(['select', 'line-2/handoff.zip', '--file', 'README.md', '--requires', 'README.md', 'handoff.py', '--output', str(output)])"
+      },
+      {
+        "line": 149,
+        "call": "link.unlink()"
+      },
+      {
+        "line": 157,
+        "call": "link.unlink()"
+      },
+      {
+        "line": 169,
+        "call": "output.unlink()"
+      },
+      {
+        "line": 184,
+        "call": "output.read_bytes()"
+      },
+      {
+        "line": 190,
+        "call": "output.unlink()"
+      },
+      {
+        "line": 118,
+        "call": "source.read(entry.filename)"
+      },
+      {
+        "line": 119,
+        "call": "target.writestr(entry, b'X' * len(content) if entry.filename == 'unrelated' else content)"
+      },
+      {
+        "line": 32,
+        "call": "archive.read(path)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-impact/impact.py",
+    "sha256": "0a4b3a37bd47ba92b032cd37c17343e92270f0b4b8abf3dfcd1418f07cc8299a",
+    "io_calls": [
+      {
+        "line": 18,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 166,
+        "call": "sys.stdout.write(encode(result).decode('ascii'))"
+      },
+      {
+        "line": 140,
+        "call": "archive.read(item['path'])"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-impact/test_impact.py",
+    "sha256": "8aca1f72a315385d0325b1392ef934603cc27469d64652f0614b9ab00f3220db",
+    "io_calls": [
+      {
+        "line": 27,
+        "call": "Path('test/scratch').mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 28,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 167,
+        "call": "before.write_bytes(impact.WRITER.build(self.files))"
+      },
+      {
+        "line": 168,
+        "call": "after.write_bytes(impact.WRITER.build(self.changed(leaf=b'x')))"
+      },
+      {
+        "line": 169,
+        "call": "graph.write_text(json.dumps(self.document))"
+      },
+      {
+        "line": 185,
+        "call": "Path(paths[1]).write_bytes(b'corrupt')"
+      },
+      {
+        "line": 194,
+        "call": "alias.symlink_to('before.zip')"
+      },
+      {
+        "line": 206,
+        "call": "Path(paths[2]).write_text('{}')"
+      },
+      {
+        "line": 210,
+        "call": "reads.append(path.name)"
+      },
+      {
+        "line": 211,
+        "call": "real_read(path, limit)"
+      },
+      {
+        "line": 221,
+        "call": "reads.append(path.name)"
+      },
+      {
+        "line": 222,
+        "call": "real_read(path, limit)"
+      },
+      {
+        "line": 223,
+        "call": "path.write_bytes(b'replaced after read')"
+      },
+      {
+        "line": 152,
+        "call": "target.writestr(entry, b'WRONG' if entry.filename == 'other' else archive.read(entry.filename))"
+      },
+      {
+        "line": 152,
+        "call": "archive.read(entry.filename)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-inspect/inspect_handoff.py",
+    "sha256": "62cc8e4b31c231eb394bd5f3053c2db29c05fc4fa62d3aeafe76027a52b8103a",
+    "io_calls": [
+      {
+        "line": 54,
+        "call": "handle.read(size)"
+      },
+      {
+        "line": 70,
+        "call": "handle.read(65557)"
+      },
+      {
+        "line": 246,
+        "call": "os.open(current, os.O_RDONLY | getattr(os, 'O_NOFOLLOW', 0) | getattr(os, 'O_NONBLOCK', 0))"
+      },
+      {
+        "line": 90,
+        "call": "read_exact(handle, cd_size)"
+      },
+      {
+        "line": 101,
+        "call": "read_exact(central, name_len)"
+      },
+      {
+        "line": 103,
+        "call": "read_exact(central, extra_len + comment_len)"
+      },
+      {
+        "line": 198,
+        "call": "handle.read(min(CHUNK, remaining))"
+      },
+      {
+        "line": 244,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 248,
+        "call": "os.fdopen(fd, 'rb')"
+      },
+      {
+        "line": 95,
+        "call": "read_exact(central, 46)"
+      },
+      {
+        "line": 123,
+        "call": "read_exact(handle, 30)"
+      },
+      {
+        "line": 130,
+        "call": "read_exact(handle, lname_len)"
+      },
+      {
+        "line": 211,
+        "call": "archive.open(MANIFEST)"
+      },
+      {
+        "line": 212,
+        "call": "source.read(limits.manifest_bytes + 1)"
+      },
+      {
+        "line": 219,
+        "call": "archive.open(name)"
+      },
+      {
+        "line": 221,
+        "call": "source.read(CHUNK)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-inspect/test_inspect.py",
+    "sha256": "2abd99e6bbf72e2b4f4c572891d4ad61d4c5913241efd4818a78e0d4430d5048",
+    "io_calls": [
+      {
+        "line": 61,
+        "call": "Path('line-2/handoff.zip').read_bytes()"
+      },
+      {
+        "line": 71,
+        "call": "p.read_bytes()"
+      },
+      {
+        "line": 122,
+        "call": "archive.read(inspector.MANIFEST)"
+      },
+      {
+        "line": 46,
+        "call": "archive.writestr(entry, data)"
+      },
+      {
+        "line": 114,
+        "call": "super().read(size)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-landing/landing.py",
+    "sha256": "e26700185f6f7adda7ec16d09094cad5b0da775b184924e19aa1ae368a5547ef",
+    "io_calls": [
+      {
+        "line": 19,
+        "call": "path.is_symlink()"
+      },
+      {
+        "line": 79,
+        "call": "os.open(Path.cwd(), flags)"
+      },
+      {
+        "line": 82,
+        "call": "os.open(part, flags, dir_fd=fd)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-landing/test_landing.py",
+    "sha256": "828ade1112929d359a45141b7c33d324f698de12bf3ec3e8e4eeb20958005ab0",
+    "io_calls": [
+      {
+        "line": 21,
+        "call": "ROOT.mkdir(parents=True)"
+      },
+      {
+        "line": 25,
+        "call": "shutil.rmtree(ROOT)"
+      },
+      {
+        "line": 36,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 37,
+        "call": "(target / 'README.md').write_text('public fixture')"
+      },
+      {
+        "line": 38,
+        "call": "(target / 'handoff.py').mkdir()"
+      },
+      {
+        "line": 45,
+        "call": "(ROOT / 'received').symlink_to('elsewhere')"
+      },
+      {
+        "line": 49,
+        "call": "(ROOT / 'received').unlink()"
+      },
+      {
+        "line": 50,
+        "call": "(ROOT / 'received').write_text('public fixture')"
+      },
+      {
+        "line": 57,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 58,
+        "call": "(target / 'nested').write_text('public fixture')"
+      },
+      {
+        "line": 77,
+        "call": "bad.write_bytes(Path('line-2/handoff.zip').read_bytes() + b'bad')"
+      },
+      {
+        "line": 92,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 93,
+        "call": "(target / 'readme.MD').write_text('public fixture; not read')"
+      },
+      {
+        "line": 103,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 116,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 117,
+        "call": "(target / 'README.md').write_text('fixture')"
+      },
+      {
+        "line": 118,
+        "call": "(target / 'readme.md').write_text('other fixture')"
+      },
+      {
+        "line": 124,
+        "call": "target.symlink_to('not-a-real-directory')"
+      },
+      {
+        "line": 136,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 137,
+        "call": "(target / 'Dir').mkdir()"
+      },
+      {
+        "line": 144,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 145,
+        "call": "(target / 'unrelated').write_text('never read')"
+      },
+      {
+        "line": 157,
+        "call": "target.mkdir()"
+      },
+      {
+        "line": 173,
+        "call": "(ROOT / 'received').symlink_to('another-directory')"
+      },
+      {
+        "line": 20,
+        "call": "shutil.rmtree(ROOT)"
+      },
+      {
+        "line": 108,
+        "call": "path.write_text('public fixture')"
+      },
+      {
+        "line": 112,
+        "call": "path.unlink()"
+      },
+      {
+        "line": 159,
+        "call": "(target / name).write_text('fixture')"
+      },
+      {
+        "line": 77,
+        "call": "Path('line-2/handoff.zip').read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-portability/portability.py",
+    "sha256": "6a2f646e3414afe34d60a467d460b3ca0a9963e6605df6edc091bc370394a96d",
+    "io_calls": [
+      {
+        "line": 21,
+        "call": "current.is_symlink()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-portability/test_portability.py",
+    "sha256": "99534cc0d781f7af00d76ad8813ee9c8368a5b7f39ba01197595fc12049da2aa",
+    "io_calls": [
+      {
+        "line": 196,
+        "call": "Path('test/scratch').mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 22,
+        "call": "Path('test/scratch').mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 100,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 113,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 126,
+        "call": "archive.writestr('HANDOFF.json', json.dumps({'version': 1, 'algorithm': 'sha256', 'files': files}).encode())"
+      },
+      {
+        "line": 133,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 149,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 160,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 162,
+        "call": "path.write_bytes(b'bad archive')"
+      },
+      {
+        "line": 172,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 174,
+        "call": "hashlib.sha256(Path(path).read_bytes()).hexdigest()"
+      },
+      {
+        "line": 185,
+        "call": "tempfile.TemporaryDirectory(dir='test/scratch')"
+      },
+      {
+        "line": 187,
+        "call": "Path(path).read_bytes().replace(b'payload for CON.txt', b'changed for CON.txt')"
+      },
+      {
+        "line": 188,
+        "call": "Path(path).write_bytes(data)"
+      },
+      {
+        "line": 123,
+        "call": "archive.writestr(name, data)"
+      },
+      {
+        "line": 187,
+        "call": "Path(path).read_bytes()"
+      },
+      {
+        "line": 174,
+        "call": "Path(path).read_bytes()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-reproduce/reproduce.py",
+    "sha256": "28cf0b5fc99da866d79839d5b5d7945c54740c52366e5505af34d98ea525e956",
+    "io_calls": [
+      {
+        "line": 18,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 35,
+        "call": "archive.read(item['path'])"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-reproduce/test_reproduce.py",
+    "sha256": "ca73a48d31f504286315a7b82a190ad5c8b5ea16d24b14798fffa0b9007b2d63",
+    "io_calls": [
+      {
+        "line": 100,
+        "call": "root.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 20,
+        "call": "source.read(info.filename)"
+      },
+      {
+        "line": 23,
+        "call": "dest.writestr(info, payload)"
+      },
+      {
+        "line": 101,
+        "call": "tempfile.TemporaryDirectory(dir=root)"
+      },
+      {
+        "line": 112,
+        "call": "path.write_bytes(self.data)"
+      },
+      {
+        "line": 114,
+        "call": "link.symlink_to(path.name)"
+      },
+      {
+        "line": 105,
+        "call": "path.write_bytes(data)"
+      },
+      {
+        "line": 106,
+        "call": "subprocess.run(command + [str(path)], capture_output=True, text=True)"
+      },
+      {
+        "line": 116,
+        "call": "subprocess.run(command + [raw], capture_output=True, text=True)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-review/review.py",
+    "sha256": "ddcef25d8b26e24da874d2e0f1da53dd50a106c10305fe7ed27ae1030db206b8",
+    "io_calls": [
+      {
+        "line": 17,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 121,
+        "call": "CONTENT.read_expectation(expectation)"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-review/test_review.py",
+    "sha256": "a1009d4f88e1311713a02be588bd93157daf9bd560059381bf8718c21c7de397",
+    "io_calls": [
+      {
+        "line": 31,
+        "call": "root.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 32,
+        "call": "tempfile.TemporaryDirectory(dir=root)"
+      },
+      {
+        "line": 36,
+        "call": "self.source.mkdir()"
+      },
+      {
+        "line": 44,
+        "call": "self.archive.write_bytes(self.data)"
+      },
+      {
+        "line": 120,
+        "call": "expectation.write_bytes(expected)"
+      },
+      {
+        "line": 139,
+        "call": "expectation.write_bytes(self.expectation())"
+      },
+      {
+        "line": 141,
+        "call": "link.symlink_to('expectation.json')"
+      },
+      {
+        "line": 148,
+        "call": "expectation.write_bytes(self.expectation())"
+      },
+      {
+        "line": 160,
+        "call": "expectation.write_bytes(b'{}')"
+      },
+      {
+        "line": 161,
+        "call": "subprocess.run(command, capture_output=True, text=True)"
+      },
+      {
+        "line": 195,
+        "call": "(self.source / 'README.md').write_bytes(b'changed')"
+      },
+      {
+        "line": 196,
+        "call": "(self.source / 'nested/empty').unlink()"
+      },
+      {
+        "line": 197,
+        "call": "(self.source / 'added.txt').write_bytes(b'new')"
+      },
+      {
+        "line": 261,
+        "call": "link.symlink_to('source', target_is_directory=True)"
+      },
+      {
+        "line": 344,
+        "call": "link.symlink_to('bundle.zip')"
+      },
+      {
+        "line": 349,
+        "call": "directory_link.symlink_to('source', target_is_directory=True)"
+      },
+      {
+        "line": 355,
+        "call": "(self.source / 'link').symlink_to('README.md')"
+      },
+      {
+        "line": 371,
+        "call": "self.archive.write_bytes(self.data)"
+      },
+      {
+        "line": 372,
+        "call": "(self.source / 'extra').write_bytes(b'new')"
+      },
+      {
+        "line": 373,
+        "call": "subprocess.run(command + ['--source', str(self.source)], capture_output=True, text=True)"
+      },
+      {
+        "line": 376,
+        "call": "subprocess.run(command + ['--sha256', 'bad'], capture_output=True, text=True)"
+      },
+      {
+        "line": 20,
+        "call": "source.read(item.filename)"
+      },
+      {
+        "line": 23,
+        "call": "target.writestr(item, payload)"
+      },
+      {
+        "line": 40,
+        "call": "dest.parent.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 41,
+        "call": "dest.write_bytes(data)"
+      },
+      {
+        "line": 109,
+        "call": "expectation.write_bytes(data)"
+      },
+      {
+        "line": 124,
+        "call": "self.archive.write_bytes(R.WRITER.build({'wrong': b'revision'}))"
+      },
+      {
+        "line": 125,
+        "call": "expectation.write_bytes(b'invalid replacement')"
+      },
+      {
+        "line": 152,
+        "call": "self.archive.write_bytes(data)"
+      },
+      {
+        "line": 153,
+        "call": "subprocess.run(command, capture_output=True, text=True)"
+      },
+      {
+        "line": 248,
+        "call": "p.read_bytes()"
+      },
+      {
+        "line": 278,
+        "call": "self.archive.write_bytes(b'invalid replacement')"
+      },
+      {
+        "line": 320,
+        "call": "subprocess.run(command + [destination], capture_output=True, text=True)"
+      },
+      {
+        "line": 335,
+        "call": "self.archive.write_bytes(b'invalid replacement')"
+      },
+      {
+        "line": 363,
+        "call": "self.archive.write_bytes(data)"
+      },
+      {
+        "line": 364,
+        "call": "subprocess.run(command, capture_output=True, text=True)"
+      },
+      {
+        "line": 114,
+        "call": "reader.assert_not_called()"
+      },
+      {
+        "line": 253,
+        "call": "p.read_bytes()"
+      },
+      {
+        "line": 297,
+        "call": "reader.assert_not_called()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-source/source_check.py",
+    "sha256": "dc1d175220e15ccdadbf7520d691920a6e25040e4e4d9dbd7ebd8c90d8e9f5de",
+    "io_calls": [
+      {
+        "line": 20,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 36,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 90,
+        "call": "os.open(path, os.O_RDONLY | getattr(os, 'O_NOFOLLOW', 0) | getattr(os, 'O_NONBLOCK', 0))"
+      },
+      {
+        "line": 92,
+        "call": "os.fdopen(fd, 'rb')"
+      },
+      {
+        "line": 98,
+        "call": "stream.read(min(check.CHUNK, recorded[3] - size + 1))"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-source/test_source.py",
+    "sha256": "fe7415943529eb0f18142a51431c4f424b9b966f5ce20cc2d7bbb2c2d4cb7178",
+    "io_calls": [
+      {
+        "line": 23,
+        "call": "tempfile.TemporaryDirectory(prefix='handoff-source-', dir='/tmp')"
+      },
+      {
+        "line": 25,
+        "call": "Path('source/sub').mkdir(parents=True)"
+      },
+      {
+        "line": 29,
+        "call": "Path('bundle.zip').write_bytes(PRODUCER.build(self.payload))"
+      },
+      {
+        "line": 39,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 44,
+        "call": "Path('source/a.txt').write_bytes(b'ALPHA')"
+      },
+      {
+        "line": 45,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 50,
+        "call": "Path('source/a.txt').unlink()"
+      },
+      {
+        "line": 51,
+        "call": "Path('source/new').write_bytes(b'new')"
+      },
+      {
+        "line": 52,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 62,
+        "call": "Path('source/empty-dir').mkdir()"
+      },
+      {
+        "line": 66,
+        "call": "Path('source/HANDOFF.json').write_bytes(b'note')"
+      },
+      {
+        "line": 70,
+        "call": "Path('source/caf\u00e9.txt').write_bytes(b'public')"
+      },
+      {
+        "line": 74,
+        "call": "Path('source/link').symlink_to('a.txt')"
+      },
+      {
+        "line": 78,
+        "call": "Path('source/link').symlink_to('sub', target_is_directory=True)"
+      },
+      {
+        "line": 91,
+        "call": "Path('link').symlink_to('source', target_is_directory=True)"
+      },
+      {
+        "line": 95,
+        "call": "Path('source/extra').write_bytes(b'')"
+      },
+      {
+        "line": 99,
+        "call": "Path('source/a.txt').write_bytes(b'123456')"
+      },
+      {
+        "line": 111,
+        "call": "hashlib.sha256(Path('bundle.zip').read_bytes()).hexdigest()"
+      },
+      {
+        "line": 116,
+        "call": "Path('bundle.zip').write_bytes(b'invalid')"
+      },
+      {
+        "line": 28,
+        "call": "(Path('source') / name).write_bytes(data)"
+      },
+      {
+        "line": 75,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 79,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 83,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 96,
+        "call": "self.run_check(limits=CHECK.Limits(files=3))"
+      },
+      {
+        "line": 100,
+        "call": "self.run_check(limits=CHECK.Limits(payload_bytes=9))"
+      },
+      {
+        "line": 103,
+        "call": "Path('source/d' + str(i)).mkdir()"
+      },
+      {
+        "line": 104,
+        "call": "self.run_check(limits=CHECK.Limits(files=3))"
+      },
+      {
+        "line": 113,
+        "call": "self.run_check(expected='f' * 64)"
+      },
+      {
+        "line": 132,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 132,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 58,
+        "call": "p.unlink()"
+      },
+      {
+        "line": 63,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 112,
+        "call": "self.run_check(expected=digest)"
+      },
+      {
+        "line": 118,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 126,
+        "call": "Path('source/new').write_bytes(b'change')"
+      },
+      {
+        "line": 129,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 59,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 111,
+        "call": "Path('bundle.zip').read_bytes()"
+      },
+      {
+        "line": 137,
+        "call": "Path('source/a.txt').unlink()"
+      },
+      {
+        "line": 138,
+        "call": "Path('bundle.zip').write_bytes(b'invalid')"
+      },
+      {
+        "line": 67,
+        "call": "self.run_check()"
+      },
+      {
+        "line": 71,
+        "call": "self.run_check()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-subset/subset.py",
+    "sha256": "3266695c03cedc1a7cdb09bce3396c72b7ce3bb93c02f37ea4b611731e45bf3f",
+    "io_calls": [
+      {
+        "line": 17,
+        "call": "current.is_symlink()"
+      },
+      {
+        "line": 89,
+        "call": "output.open('xb')"
+      },
+      {
+        "line": 54,
+        "call": "archive.read(name)"
+      },
+      {
+        "line": 91,
+        "call": "handle.write(data)"
+      },
+      {
+        "line": 93,
+        "call": "output.unlink()"
+      }
+    ]
+  },
+  {
+    "path": "line-2/tools/handoff-subset/test_subset.py",
+    "sha256": "5b832ce878e2620f2164f3867c4fc00d2604ff08ba836a78ce7dd10a486446ba",
+    "io_calls": [
+      {
+        "line": 99,
+        "call": "root.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 106,
+        "call": "out.read_bytes()"
+      },
+      {
+        "line": 114,
+        "call": "out.unlink()"
+      },
+      {
+        "line": 118,
+        "call": "root.mkdir(parents=True, exist_ok=True)"
+      },
+      {
+        "line": 120,
+        "call": "link.is_symlink()"
+      },
+      {
+        "line": 121,
+        "call": "link.symlink_to('missing.zip')"
+      },
+      {
+        "line": 141,
+        "call": "subprocess.run([sys.executable, '-B', 'line-2/tools/handoff-subset/subset.py', 'demo'], capture_output=True, text=True, check=True)"
+      },
+      {
+        "line": 101,
+        "call": "out.unlink()"
+      },
+      {
+        "line": 112,
+        "call": "out.read_bytes()"
+      },
+      {
+        "line": 120,
+        "call": "link.unlink()"
+      },
+      {
+        "line": 128,
+        "call": "link.unlink()"
+      },
+      {
+        "line": 28,
+        "call": "archive.read('dir/b.txt')"
+      },
+      {
+        "line": 60,
+        "call": "source.read(entry.filename)"
+      },
+      {
+        "line": 61,
+        "call": "target.writestr(entry, b'edit' if entry.filename == '\u00e9' else content)"
+      }
+    ]
+  }
+]

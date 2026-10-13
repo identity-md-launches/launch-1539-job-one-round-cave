@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "Unsigned EIP-1559 fee envelope\nChain / nonce: 1 / 0\nTo: 0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\nCalldata selector: 0x18160ddd\nNative value: 0 ETH (0 wei)\nGas limit: 100000\nFee caps: 2000000000 wei max, 1000000000 wei priority\nFee-cap ceiling: 0.0002 ETH (200000000000000 wei)\nValue + fee-cap ceiling: 0.0002 ETH (200000000000000 wei)\nAccess-list entries: 0\nNote: The ceiling uses gasLimit multiplied by maxFeePerGas; actual gas use may be lower.\nNote: This is an unsigned-envelope arithmetic summary, not a balance or execution check.\nNote: Ethereum gas is paid in ETH, including calls to ZTO and IMD.\nNote: No network, wallet, key, environment, signing or transaction submission is used.\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/fee-envelope/fee_envelope.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.673262+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

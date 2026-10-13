@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_directory_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_directory_symlink_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_duplicate_json_keys_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_excessive_nesting_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_fifo_refused_without_waiting_for_writer (test_companions.CompanionBoundaryTests) ... ok\ntest_final_symlink_refused_even_inside_workspace (test_companions.CompanionBoundaryTests) ... ok\ntest_invalid_utf8_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_nonfinite_and_overflow_json_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_outside_workspace_refused (test_companions.CompanionBoundaryTests) ... ok\ntest_oversized_file_refused_before_decode (test_companions.CompanionBoundaryTests) ... ok\ntest_real_zto_capture_through_every_cli (test_companions.CompanionBoundaryTests) ... ok\ntest_traversal_refused_without_resolving_to_valid_file (test_companions.CompanionBoundaryTests) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 5.426s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/bounded-capture-reader",
+    "-p",
+    "test_companions.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 12,
+  "checked_at": "2026-10-13T08:41:53.745619+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

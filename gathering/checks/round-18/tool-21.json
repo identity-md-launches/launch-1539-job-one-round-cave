@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-impact",
+    "-p",
+    "test_impact.py",
+    "-v"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_additions_are_visible_but_not_inferred (test_impact.ImpactTests) ... ok\ntest_baseline_absent_graph_node_refused (test_impact.ImpactTests) ... ok\ntest_cli_exits (test_impact.ImpactTests) ... ok\ntest_corrupt_unselected_file_refused (test_impact.ImpactTests) ... ok\ntest_cycle_terminates (test_impact.ImpactTests) ... ok\ntest_deterministic_order_and_root_digest (test_impact.ImpactTests) ... ok\ntest_direct_root_edit (test_impact.ImpactTests) ... ok\ntest_each_file_captured_once (test_impact.ImpactTests) ... ok\ntest_graph_invalid_shapes_and_paths (test_impact.ImpactTests) ... ok\ntest_invalid_graph_before_archive_reads (test_impact.ImpactTests) ... ok\ntest_json_duplicates_constants_and_size (test_impact.ImpactTests) ... ok\ntest_limits_and_report_budget (test_impact.ImpactTests) ... ok\ntest_metadata_only_change (test_impact.ImpactTests) ... ok\ntest_multiple_roots_shared_dependency (test_impact.ImpactTests) ... ok\ntest_outside_closure (test_impact.ImpactTests) ... ok\ntest_paths_symlinks_fifo_and_traversal (test_impact.ImpactTests) ... ok\ntest_real_inherited_archive_and_demo (test_impact.ImpactTests) ... ok\ntest_removal_is_diagnostic (test_impact.ImpactTests) ... ok\ntest_removed_root (test_impact.ImpactTests) ... ok\ntest_self_edge (test_impact.ImpactTests) ... ok\ntest_transitive_same_size_edit (test_impact.ImpactTests) ... ok\ntest_trusted_digest (test_impact.ImpactTests) ... ok\ntest_unchanged (test_impact.ImpactTests) ... ok\ntest_undeclared_leaf_refused (test_impact.ImpactTests) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.054s\n\nOK\n",
+  "fixture_adaptation": "Python 3.10 scratch TemporaryDirectory uses absolute dir; no native source edit.",
+  "kind": "suite",
+  "tests_run": 24,
+  "workspace": "test/scratch/round-18-mirror"
+}

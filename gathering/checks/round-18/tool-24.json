@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_case_collision (test_portability.PortabilityTests) ... ok\ntest_deterministic (test_portability.PortabilityTests) ... ok\ntest_devices (test_portability.PortabilityTests) ... ok\ntest_directory_case_collision (test_portability.PortabilityTests) ... ok\ntest_file_directory_conflict (test_portability.PortabilityTests) ... ok\ntest_fixture_absolute_and_relative_roots (test_portability.PortabilityTests) ... ok\ntest_forbidden_punctuation (test_portability.PortabilityTests) ... ok\ntest_invalid_archive_no_partial_json (test_portability.PortabilityTests) ... ok\ntest_manifest_alias (test_portability.PortabilityTests) ... ok\ntest_normalization_collision (test_portability.PortabilityTests) ... ok\ntest_ordinary_paths (test_portability.PortabilityTests) ... ok\ntest_payload_integrity_before_path_analysis (test_portability.PortabilityTests) ... ok\ntest_real_inherited_archive (test_portability.PortabilityTests) ... ok\ntest_trailing_trim_collisions (test_portability.PortabilityTests) ... ok\ntest_trusted_digest_and_mismatch (test_portability.PortabilityTests) ... ok\ntest_utf16_lengths (test_portability.PortabilityTests) ... ok\ntest_utf8_component_boundary (test_portability.PortabilityTests) ... ok\ntest_utf8_counts_original_spelling (test_portability.PortabilityTests) ... ok\ntest_utf8_directory_component (test_portability.PortabilityTests) ... ok\ntest_verified_hazard_cli (test_portability.PortabilityTests) ... ok\ntest_verified_utf8_boundary_is_portable (test_portability.PortabilityTests) ... ok\ntest_verified_utf8_hazard_cli (test_portability.PortabilityTests) ... ok\ntest_workspace_path_refusal (test_portability.PortabilityTests) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.071s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-portability",
+    "-p",
+    "test_portability.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 23,
+  "checked_at": "2026-10-13T08:41:43.064153+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

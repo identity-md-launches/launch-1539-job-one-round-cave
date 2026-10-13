@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"added_dependency_paths\": [\n    \"handoff.py\"\n  ],\n  \"demo\": \"real inherited README plus its explicitly declared handoff.py; no writes\",\n  \"format\": \"handoff-dependencies-v1\",\n  \"graph\": {\n    \"README.md\": [\n      \"handoff.py\"\n    ],\n    \"handoff.py\": []\n  },\n  \"graph_digest_encoding\": \"ASCII JSON, sorted keys/lists, compact separators, no newline\",\n  \"graph_edge_count\": 1,\n  \"graph_node_count\": 2,\n  \"graph_sha256\": \"52e2f65647ddcc68b9787532c7b54127a133e96831fcea029d14f5fb3200e33a\",\n  \"note\": \"Dependencies are caller declarations, never inferred or executed. All source payloads are verified. Complete graph closure does not prove the declarations are correct, software is runnable, or a sender is authentic.\",\n  \"reproduced\": true,\n  \"roots\": [\n    \"README.md\"\n  ],\n  \"subset\": {\n    \"file_count\": 2,\n    \"format\": \"handoff-subset-v1\",\n    \"note\": \"All source payloads were verified, including omitted files. Selection uses exact paths, without renaming or dependency inference. The new ZIP has its own manifest and digest. This receipt does not authenticate a sender or prove that a subset is runnable or safe.\",\n    \"omitted_paths\": [],\n    \"payload_bytes\": 12603,\n    \"selected_files\": [\n      {\n        \"bytes\": 2780,\n        \"path\": \"README.md\",\n        \"sha256\": \"930a0c0147a5e4a5a749a08d4c49656aa149126611d771e60864c85c015aafc2\"\n      },\n      {\n        \"bytes\": 9823,\n        \"path\": \"handoff.py\",\n        \"sha256\": \"0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d\"\n      }\n    ],\n    \"source_archive_bytes\": 13181,\n    \"source_archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n    \"source_file_count\": 2,\n    \"source_trusted_digest_matched\": false,\n    \"subset_archive_bytes\": 13181,\n    \"subset_archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n    \"verified\": true\n  },\n  \"unselected_declared_paths\": []\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-dependencies/dependencies.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.630189+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

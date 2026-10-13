@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Gathered Journey",
+  "image": "https://api.imd.fun/artifacts/6497f76c8a44bb0c7e9080bb7059b57580d4947e02713930d54758b4028aa3be",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 18
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Transaction group handoff"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A charcoal cord gathers the stones of one journey without losing their traces."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_files_reproduce_original (test_subset.Subsets) ... ok\ntest_bad_selections (test_subset.Subsets) ... ok\ntest_cli_output_and_no_overwrite_or_extraction (test_subset.Subsets) ... ok\ntest_cli_real_no_write (test_subset.Subsets) ... ok\ntest_exact_subset_and_own_manifest (test_subset.Subsets) ... ok\ntest_input_budgets (test_subset.Subsets) ... ok\ntest_invalid_input_no_output (test_subset.Subsets) ... ok\ntest_mutable_input_frozen (test_subset.Subsets) ... ok\ntest_order_independent (test_subset.Subsets) ... ok\ntest_path_confinement (test_subset.Subsets) ... ok\ntest_real_archive (test_subset.Subsets) ... ok\ntest_symlink_output_refused (test_subset.Subsets) ... ok\ntest_tampered_omitted_file_refused (test_subset.Subsets) ... ok\ntest_trusted_digest (test_subset.Subsets) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.106s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-subset",
+    "-p",
+    "test_subset.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T08:41:45.383524+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"kind\": \"strict-rpc-json-demo\",\n  \"limitations\": \"Reconstructed envelope around dated provider evidence; not a new chain observation or completeness proof.\",\n  \"max_bytes\": 16777216,\n  \"max_nesting\": 64,\n  \"network_used\": false,\n  \"rejected\": [\n    \"duplicate key\",\n    \"non-finite number\",\n    \"mixed result/error\"\n  ],\n  \"retained_real_log_count\": 3,\n  \"token\": \"ZTO\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/strict-rpc-json/strict_rpc.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T08:41:58.874897+00:00",
+  "workspace": "test/scratch/round-18-mirror"
+}

@@ -1,0 +1,50 @@
+{
+  "source_record": 17,
+  "record_number": 18,
+  "source_sha256": "c7c661823015e362438ebc2dff9df0b0521ca172616ef663dc5fc1132ce8fb06",
+  "wall_sha256": "6497f76c8a44bb0c7e9080bb7059b57580d4947e02713930d54758b4028aa3be",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3811511,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 70076,
+  "generated_motif_dimensions": [
+    1254,
+    1254
+  ],
+  "generated_motif_sha256": "e5de92f27d7ff7ba2a059603d54b87642674276988ed50c2f45c2e75b07ee77c",
+  "motif_crop": [
+    272,
+    293,
+    1005,
+    977
+  ],
+  "addition_rectangle": [
+    420,
+    65,
+    150,
+    105
+  ],
+  "changed_pixels": 5516,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed image tool motif; white paper removed in memory, earth pigment area-averaged into vacant rock.",
+  "visual_review": "Final PNG and JPEG inspected locally; ancestor frog and rock preserved, new charcoal cord groups three ochre pebbles on vacant upper rock.",
+  "inherited_hand_digit_counts": [
+    5,
+    5
+  ],
+  "new_hands": 0,
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Inherited rock has photographic-looking texture, preserved as required.",
+    "The small generated motif is subdued at thumbnail size.",
+    "Visual review is local, not independent artistic certification."
+  ]
+}

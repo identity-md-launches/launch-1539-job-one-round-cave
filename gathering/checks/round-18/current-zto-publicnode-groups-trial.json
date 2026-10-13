@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-transaction-groups/groups.py",
+    "--capture",
+    "gathering/checks/round-18/current-zto-publicnode.json"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"chain_id\": 1,\n  \"decimals\": 18,\n  \"duplicate_log_count\": 0,\n  \"from_block\": 26182448,\n  \"from_block_anchor\": {\n    \"hash\": \"0x8c99d17b9ca59c75704219f99437ba3bde47b42badc2dada2d3c1f600fe18f16\",\n    \"number\": 26182448\n  },\n  \"kind\": \"erc20-transfer-transaction-groups\",\n  \"limitations\": \"Groups contain this token's observed Transfer events only, not complete transaction receipts. Missing log indexes may belong to other events. Event totals can count a routed amount more than once; they are not trade volume, prices, balances, holders or proof of activity in a specific v4 pool. Metadata consistency does not prove provider honesty, completeness or finality.\",\n  \"observed_transaction_count\": 0,\n  \"raw_logs_revalidated\": true,\n  \"read_only\": true,\n  \"schema_version\": 1,\n  \"to_block\": 26182449,\n  \"to_block_anchor\": {\n    \"hash\": \"0x8feec14e8799e082606415e6ec50fdd02337e7dab59e811ab86d55796526d631\",\n    \"number\": 26182449\n  },\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transaction_metadata_consistent\": true,\n  \"transactions\": [],\n  \"transfer_count\": 0\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T08:43:49.606176+00:00"
+}
