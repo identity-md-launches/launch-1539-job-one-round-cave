@@ -1,0 +1,27 @@
+{
+  "record_count": 38,
+  "new_record": "dist/line-2/38.json",
+  "goal_unchanged_bytes": true,
+  "older_records_and_tools_unchanged": true,
+  "allowed_paths_only": true,
+  "new_files_outside_artifacts_below_100KB": true,
+  "named_image_outputs_untracked": true,
+  "wall_sha256": "7cd361440e31f987c91cce0365cc90e5d05ae57bafc6d80d8d3e4df55e284444",
+  "dimensions": {
+    "wall": [
+      1254,
+      1254
+    ],
+    "thumbnail": [
+      512,
+      512
+    ]
+  },
+  "formats": {
+    "wall": "PNG, 8-bit RGB",
+    "thumbnail": "baseline JPEG"
+  },
+  "unmet_visual_requirements": [],
+  "structural_image_inspection": "all three images valid",
+  "checks": "24 behavioral tests and both README demonstration commands passed"
+}

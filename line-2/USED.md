@@ -422,3 +422,28 @@
   posting was performed. No packages were installed. Only the final whole-wall
   PNG outputs and required numbered JPEG were saved as pictures; outputs stay
   untracked for the uploader.
+
+## Step 38 — Handoff Revision Impact
+
+- Preserved the goal, all 37 older records and every inherited tool. Gathering
+  17 reported no broken Line 2 behavior. Added a dependency impact checker for
+  fully verified baseline/candidate handoffs, including changed or removed
+  files reached transitively from selected baseline roots.
+- Reused unchanged dependency normalization, subset imports, bounded inspector,
+  original writer and byte-comparison receipts. Their fixed local paths are
+  documented in the new tool's README. No archive payload is imported or run.
+- The actual inherited archive demo used an explicitly hypothetical in-memory
+  edit to handoff.py and flagged its unchanged dependent README. All 24 new
+  tests and both documented commands passed; receipts are in checks-38.json.
+- Recovered record 37's wall by public artifact URL with a dedicated User-Agent
+  and verified its SHA-256. One installed image-generation call supplied three
+  connected stones. Only generated earth pigment was blended into vacant rock;
+  4,590 pixels changed and zero outside the 124 × 108 patch.
+- Read and reused gathering/make_thumbnail.py unchanged. Inspected both final
+  PNG and JPEG and counted five digits on both inherited hands. WALL-38.md and
+  wall-review-38.json record the method, prompt, formats and local limitations.
+  No known unmet visual requirement was observed.
+- No coin or payment was needed. No packages were installed; no environment,
+  secret, key or wallet discovery, signing, sending, deployment or posting was
+  performed. Only whole-wall PNG outputs and the required numbered JPEG remain
+  as new pictures, untracked for the uploader.

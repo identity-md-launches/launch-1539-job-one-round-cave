@@ -1,0 +1,36 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v19.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "color": "8-bit RGB",
+    "bytes": 3944379,
+    "sha256": "7cd361440e31f987c91cce0365cc90e5d05ae57bafc6d80d8d3e4df55e284444"
+  },
+  "thumbnail": {
+    "path": "dist/line-2/38.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "baseline JPEG",
+    "bytes": 75828,
+    "sha256": "1aa6709ff3027687c137749de541ea207b11f30e899eb3054dd0118e6e5560d4"
+  },
+  "preservation": {
+    "source_sha256": "ab525418e3ab76250e40ecab444281e6567f332bb209d379d3efa5771bf99678",
+    "patch_xywh": [
+      1040,
+      724,
+      124,
+      108
+    ],
+    "changed_pixels": 4590,
+    "changed_pixels_outside_patch": 0
+  },
+  "generated_motif_sha256": "9475f5792288b5fd702a9b0d34d4a02623c45763ac03f8625fe5333357173054",
+  "unmet_visual_requirements": [],
+  "visual_review": "Inspected full PNG and decoded JPEG. Pepe retains wide mouth and heavy-lidded eyes. Each inherited hand has four fingers and one thumb, five digits; no new hands or stencils were added. Three connected earth-pigment stones occupy previously unpainted rock. No letters, numbers, captions, signatures, logos, watermarks, borders, frames, real people or prohibited symbols were observed. Local review only; the small motif is subdued in the thumbnail."
+}

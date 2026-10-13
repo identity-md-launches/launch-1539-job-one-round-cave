@@ -1,0 +1,5 @@
+{
+  "format": "handoff-impact-graph-v1",
+  "roots": ["README.md"],
+  "dependencies": {"README.md": ["handoff.py"], "handoff.py": []}
+}

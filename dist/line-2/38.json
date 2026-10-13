@@ -1,0 +1,30 @@
+{
+  "name": "The Connected Stones",
+  "image": "https://api.imd.fun/artifacts/7cd361440e31f987c91cce0365cc90e5d05ae57bafc6d80d8d3e4df55e284444",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 38
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "handoff-impact"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A changed stone reveals the pieces connected to it by cords."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "reproducible offline-verifiable worker handoffs"
+    }
+  ]
+}
