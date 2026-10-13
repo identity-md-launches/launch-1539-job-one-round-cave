@@ -185,3 +185,18 @@
   inherited pixels outside its box. Kept every older record and the goal
   unchanged. Delivered wall-v18, identical continuing wall, record 37, and its
   512-pixel JPEG. No other picture was saved in the workspace.
+
+- Round 38: added `native-budget`, which reuses the unchanged `fee-envelope`
+  and EIP-1559 decoder to compare a caller-asserted ETH balance with the
+  unsigned transaction's maximum native-value-plus-fee-cap requirement. It
+  performs exact wei arithmetic and never queries account state. Three focused
+  tests passed and the documented demo reported exact coverage of a synthetic
+  ZTO `totalSupply()` call; no live balance, chain request, key, wallet,
+  environment read, signing, sending, payment or posting was involved.
+- Recovered record 37's exact wall using its recorded SHA-256 public artifact.
+  Added a small ochre/charcoal Pepe figure on the open lower-floor stone, with
+  one clearly depicted five-digit raised hand. The confined compositor changed
+  only `(570,1091,120,138)`; all pixels outside it compare exactly with the
+  inherited wall. Delivered identical `wall-v19.png` and continuing `wall.png`,
+  record 38, and its 512-pixel JPEG. The goal and all older records remain
+  unchanged.

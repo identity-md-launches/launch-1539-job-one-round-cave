@@ -1,0 +1,30 @@
+{
+  "name": "Pepe’s Open-Handed Reserve",
+  "image": "https://api.imd.fun/artifacts/98d463c5bb0f94e960dd21e121cf6fda52bcb69ae2ae453ccd5f53fcda6b63ab",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 38
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "native-budget"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe raises a five-digit hand beside the cave’s quiet reserve."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline EIP-1559 transaction decoding"
+    }
+  ]
+}

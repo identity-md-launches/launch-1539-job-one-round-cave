@@ -1,0 +1,34 @@
+{
+  "round": 38,
+  "wall": "artifacts/line-3/wall-v19.png",
+  "continuing_wall": "artifacts/line-3/wall.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG, RGB, opaque",
+  "thumbnail": "dist/line-3/38.jpg",
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_format": "JPEG",
+  "motif_box_xywh": [
+    570,
+    1091,
+    120,
+    138
+  ],
+  "changed_pixels_inside_box": 7527,
+  "preservation": "All inherited pixels outside the motif box are exactly unchanged.",
+  "visual_review": {
+    "cave_rock_texture_cracks_light_and_framing_retained": true,
+    "pepe_frog_cave_figure_visible": true,
+    "added_hand_digits": "One raised hand; five digits counted (four fingers, one thumb).",
+    "earth_pigment_mark_visible": true,
+    "letters_numbers_captions_signatures_logos_watermarks_borders_frames": false,
+    "photographs_or_3d_renders": false,
+    "real_people_or_political_or_hateful_symbols": false,
+    "unmet_visual_requirements": []
+  }
+}
